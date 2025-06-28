@@ -193,7 +193,7 @@ const App = () => {
                     onClick={() => handleBuyNow(product.checkoutUrl)}
                     className="w-full px-6 py-3 bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
                   >
-                    Buy Now
+                    Comprar Agora
                   </button>
                 </div>
               </div>
