@@ -208,22 +208,22 @@ const App = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                About Belle Boutique
+                Sobre a Belle Boutique
               </h3>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                We believe that true beauty comes from within, and our carefully curated collection of premium beauty and wellness products is designed to help you unlock your natural radiance.
+                Acreditamos que a verdadeira beleza vem de dentro, e nossa coleção cuidadosamente selecionada de produtos premium de beleza e bem-estar foi criada para ajudar você a despertar seu brilho natural.
               </p>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                From revolutionary supplements to professional treatments, each product in our collection has been selected for its exceptional quality and proven results.
+                Dos suplementos revolucionários aos tratamentos profissionais, cada produto em nossa coleção foi selecionado por sua qualidade excepcional e resultados comprovados.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-rose-500 mb-2">100%</div>
-                  <div className="text-gray-700">Natural Ingredients</div>
+                  <div className="text-gray-700">Ingredientes Naturais</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-rose-500 mb-2">7</div>
-                  <div className="text-gray-700">Premium Products</div>
+                  <div className="text-gray-700">Produtos Premium</div>
                 </div>
               </div>
             </div>
