@@ -150,10 +150,10 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h3 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Our Premium Collection
+              Nossa Coleção Premium
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Carefully selected products to help you look and feel your absolute best
+              Produtos cuidadosamente selecionados para ajudar você a se sentir e parecer incrível
             </p>
           </div>
 
