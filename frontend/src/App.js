@@ -111,23 +111,23 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6">
-              Unleash Your
+              Desperte Sua
               <span className="block bg-gradient-to-r from-rose-500 via-pink-500 to-rose-400 bg-clip-text text-transparent">
-                Natural Beauty
+                Beleza Natural
               </span>
             </h2>
             <p className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Discover our curated collection of premium beauty and wellness products designed to enhance your natural radiance.
+              Descubra nossa coleção cuidadosamente selecionada de produtos premium de beleza e bem-estar, criados para realçar seu brilho natural.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}
                 className="px-8 py-4 bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
               >
-                Shop Collection
+                Ver Coleção
               </button>
               <button className="px-8 py-4 border-2 border-rose-300 text-rose-600 font-semibold rounded-full hover:bg-rose-50 transition-all duration-300">
-                Learn More
+                Saiba Mais
               </button>
             </div>
           </div>
