@@ -97,10 +97,10 @@ const App = () => {
               </h1>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#home" className="text-gray-700 hover:text-rose-500 transition-colors">Home</a>
-              <a href="#products" className="text-gray-700 hover:text-rose-500 transition-colors">Products</a>
-              <a href="#about" className="text-gray-700 hover:text-rose-500 transition-colors">About</a>
-              <a href="#contact" className="text-gray-700 hover:text-rose-500 transition-colors">Contact</a>
+              <a href="#home" className="text-gray-700 hover:text-rose-500 transition-colors">Início</a>
+              <a href="#products" className="text-gray-700 hover:text-rose-500 transition-colors">Produtos</a>
+              <a href="#about" className="text-gray-700 hover:text-rose-500 transition-colors">Sobre Nós</a>
+              <a href="#contact" className="text-gray-700 hover:text-rose-500 transition-colors">Contato</a>
             </nav>
           </div>
         </div>
