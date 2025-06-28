@@ -71,10 +71,10 @@ const App = () => {
   ];
 
   const categories = [
-    { id: 'all', name: 'All Products' },
-    { id: 'skincare', name: 'Skincare' },
-    { id: 'haircare', name: 'Hair Care' },
-    { id: 'supplements', name: 'Supplements' }
+    { id: 'all', name: 'Todos os Produtos' },
+    { id: 'skincare', name: 'Cuidados com a Pele' },
+    { id: 'haircare', name: 'Cuidados Capilares' },
+    { id: 'supplements', name: 'Suplementos' }
   ];
 
   const filteredProducts = selectedCategory === 'all' 
