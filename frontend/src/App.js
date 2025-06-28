@@ -8,63 +8,63 @@ const App = () => {
     {
       id: 1,
       name: 'Roza Amazônica',
-      description: 'A natural beauty supplement for hair and skin wellness.',
+      description: 'Suplemento natural de beleza para o bem-estar dos cabelos e da pele.',
       category: 'supplements',
-      price: 'Shop Now',
+      price: 'Compre Agora',
       image: 'https://images.pexels.com/photos/15897784/pexels-photo-15897784.jpeg',
       checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883'
     },
     {
       id: 2,
       name: 'Rosa Xantina',
-      description: 'Skin revitalizing formula with antioxidant properties.',
+      description: 'Fórmula revitalizante para a pele com propriedades antioxidantes.',
       category: 'skincare',
-      price: 'Shop Now',
+      price: 'Compre Agora',
       image: 'https://images.pexels.com/photos/32729950/pexels-photo-32729950.jpeg',
       checkoutUrl: 'https://ev.braip.com/ref?pv=pro9y44w&af=afi8jmg66g'
     },
     {
       id: 3,
       name: 'Kit S.O.S',
-      description: 'A complete care kit for skin recovery and hydration.',
+      description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
       category: 'skincare',
-      price: 'Shop Now',
+      price: 'Compre Agora',
       image: 'https://images.pexels.com/photos/7691165/pexels-photo-7691165.jpeg',
       checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290'
     },
     {
       id: 4,
       name: 'BB4U',
-      description: 'Beauty blend for energy, focus, and external glow.',
+      description: 'Blend de beleza para energia, foco e brilho exterior.',
       category: 'supplements',
-      price: 'Shop Now',
+      price: 'Compre Agora',
       image: 'https://images.pexels.com/photos/7615574/pexels-photo-7615574.jpeg',
       checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab'
     },
     {
       id: 5,
       name: 'Hidraliso',
-      description: 'Professional hair straightening treatment with nourishing effect.',
+      description: 'Tratamento profissional de alisamento capilar com efeito nutritivo.',
       category: 'haircare',
-      price: 'Shop Now',
+      price: 'Compre Agora',
       image: 'https://images.pexels.com/photos/17511746/pexels-photo-17511746.jpeg',
       checkoutUrl: 'https://ev.braip.com/ref?pv=proyyn2e&af=afivpe8mmq'
     },
     {
       id: 6,
       name: 'Harmony Hair',
-      description: 'Advanced hair health formula to reduce fall and promote growth.',
+      description: 'Fórmula avançada para a saúde capilar que reduz a queda e promove o crescimento.',
       category: 'haircare',
-      price: 'Shop Now',
+      price: 'Compre Agora',
       image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc',
       checkoutUrl: 'https://ev.braip.com/ref?pv=prol9enx&af=afizjy6vvg'
     },
     {
       id: 7,
       name: 'Brain Hacker',
-      description: 'Cognitive enhancement supplement with natural ingredients.',
+      description: 'Suplemento para melhora cognitiva com ingredientes naturais.',
       category: 'supplements',
-      price: 'Shop Now',
+      price: 'Compre Agora',
       image: 'https://images.unsplash.com/photo-1535415493710-bdf0b2dc725e',
       checkoutUrl: 'https://pv.b4you.com.br/pages/qfxlVb_02mWCCwuO7c4yV/eIHBsTFV1o'
     }
