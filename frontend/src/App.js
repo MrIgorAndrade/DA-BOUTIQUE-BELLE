@@ -333,7 +333,7 @@ const App = () => {
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              © 2025 Belle Boutique. Todos os direitos reservados. Feito com ❤️ para você linda.
+              © 2025 DA BOUTIQUE BELLE. Todos os direitos reservados. Feito com ❤️ para você linda.
             </p>
           </div>
         </div>
