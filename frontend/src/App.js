@@ -11,7 +11,7 @@ const App = () => {
       description: 'Suplemento natural de beleza para o bem-estar dos cabelos e da pele.',
       category: 'supplements',
       price: 'Compre Agora',
-      image: 'https://images.pexels.com/photos/15897784/pexels-photo-15897784.jpeg',
+      image: 'https://drive.google.com/uc?export=view&id=1sXuACoJVY8i4PAxEbcye0uZiLxSJUyc1',
       checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883'
     },
     {
@@ -20,7 +20,7 @@ const App = () => {
       description: 'Fórmula revitalizante para a pele com propriedades antioxidantes.',
       category: 'skincare',
       price: 'Compre Agora',
-      image: 'https://images.pexels.com/photos/32729950/pexels-photo-32729950.jpeg',
+      image: 'https://drive.google.com/uc?export=view&id=1PPzQoRVEbRP6OaTLot7JeTWPt1B5cCY8',
       checkoutUrl: 'https://ev.braip.com/ref?pv=pro9y44w&af=afi8jmg66g'
     },
     {
@@ -29,7 +29,7 @@ const App = () => {
       description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
       category: 'skincare',
       price: 'Compre Agora',
-      image: 'https://images.pexels.com/photos/7691165/pexels-photo-7691165.jpeg',
+      image: 'https://drive.google.com/uc?export=view&id=1ck9DyhIUOP6VTyzWP2HUAi6D4GEA2nnl',
       checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290'
     },
     {
@@ -38,7 +38,7 @@ const App = () => {
       description: 'Blend de beleza para energia, foco e brilho exterior.',
       category: 'supplements',
       price: 'Compre Agora',
-      image: 'https://images.pexels.com/photos/7615574/pexels-photo-7615574.jpeg',
+      image: 'https://drive.google.com/uc?export=view&id=1upvY5in07dMOWCt9BL2Fg42EINLujXy5',
       checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab'
     },
     {
@@ -47,7 +47,7 @@ const App = () => {
       description: 'Tratamento profissional de alisamento capilar com efeito nutritivo.',
       category: 'haircare',
       price: 'Compre Agora',
-      image: 'https://images.pexels.com/photos/17511746/pexels-photo-17511746.jpeg',
+      image: 'https://drive.google.com/uc?export=view&id=1KeEEHgeS3DRlkIBdHUSUz1XDXZt6pmVj',
       checkoutUrl: 'https://ev.braip.com/ref?pv=proyyn2e&af=afivpe8mmq'
     },
     {
@@ -56,7 +56,7 @@ const App = () => {
       description: 'Fórmula avançada para a saúde capilar que reduz a queda e promove o crescimento.',
       category: 'haircare',
       price: 'Compre Agora',
-      image: 'https://images.unsplash.com/photo-1608248597279-f99d160bfcbc',
+      image: 'https://drive.google.com/uc?export=view&id=1EywAAwqhpp7IyJ5j-J5Vx91_kEBBzlev',
       checkoutUrl: 'https://ev.braip.com/ref?pv=prol9enx&af=afizjy6vvg'
     },
     {
@@ -65,7 +65,7 @@ const App = () => {
       description: 'Suplemento para melhora cognitiva com ingredientes naturais.',
       category: 'supplements',
       price: 'Compre Agora',
-      image: 'https://images.unsplash.com/photo-1535415493710-bdf0b2dc725e',
+      image: 'https://drive.google.com/uc?export=view&id=1rdYO0vLHFnZrliqCHp35hHhvEe8AWk-l',
       checkoutUrl: 'https://pv.b4you.com.br/pages/qfxlVb_02mWCCwuO7c4yV/eIHBsTFV1o'
     }
   ];
