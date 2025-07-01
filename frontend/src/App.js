@@ -289,7 +289,7 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <h4 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                Belle Boutique
+                DA BOUTIQUE BELLE
               </h4>
               <p className="text-gray-400 mb-6 leading-relaxed">
                 Sua parceira de confiança em beleza e bem-estar. Descubra o poder dos ingredientes naturais e formulações premium.
