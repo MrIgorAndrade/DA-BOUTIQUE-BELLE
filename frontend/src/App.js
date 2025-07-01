@@ -211,7 +211,7 @@ const App = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                Sobre a Belle Boutique
+                Sobre a DA BOUTIQUE BELLE
               </h3>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Acreditamos que a verdadeira beleza vem de dentro, e nossa coleção cuidadosamente selecionada de produtos premium de beleza e bem-estar foi criada para ajudar você a despertar seu brilho natural.
