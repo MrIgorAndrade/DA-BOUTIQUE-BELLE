@@ -5,7 +5,7 @@ const products = [
         name: 'Roza Amazônica',
         description: 'Suplemento natural de beleza para o bem-estar dos cabelos e da pele.',
         category: 'supplements',
-        image: 'https://drive.google.com/uc?export=view&id=1sXuACoJVY8i4PAxEbcye0uZiLxSJUyc1',
+        image: 'https://i.ibb.co/4wQ2PLcZ/rosa-amazonica.jpg',
         checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883'
     },
     {
@@ -13,7 +13,7 @@ const products = [
         name: 'Rosa Xantina',
         description: 'Fórmula revitalizante para a pele com propriedades antioxidantes.',
         category: 'skincare',
-        image: 'https://drive.google.com/uc?export=view&id=1PPzQoRVEbRP6OaTLot7JeTWPt1B5cCY8',
+        image: 'https://i.ibb.co/Nd9jnb7Y/rosa-xantina.jpg',
         checkoutUrl: 'https://ev.braip.com/ref?pv=pro9y44w&af=afi8jmg66g'
     },
     {
@@ -21,7 +21,7 @@ const products = [
         name: 'Kit S.O.S',
         description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
         category: 'skincare',
-        image: 'https://drive.google.com/uc?export=view&id=1ck9DyhIUOP6VTyzWP2HUAi6D4GEA2nnl',
+        image: 'https://i.ibb.co/Cp5Dv7sm/kit-sos.jpg',
         checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290'
     },
     {
@@ -29,7 +29,7 @@ const products = [
         name: 'BB4U',
         description: 'Blend de beleza para energia, foco e brilho exterior.',
         category: 'supplements',
-        image: 'https://drive.google.com/uc?export=view&id=1upvY5in07dMOWCt9BL2Fg42EINLujXy5',
+        image: 'https://i.ibb.co/v6fTxLbT/bb4u.jpg',
         checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab'
     },
     {
@@ -37,7 +37,7 @@ const products = [
         name: 'Hidraliso',
         description: 'Tratamento profissional de alisamento capilar com efeito nutritivo.',
         category: 'haircare',
-        image: 'https://drive.google.com/uc?export=view&id=1KeEEHgeS3DRlkIBdHUSUz1XDXZt6pmVj',
+        image: 'https://i.ibb.co/qFghTHTy/hidraliso.jpg',
         checkoutUrl: 'https://ev.braip.com/ref?pv=proyyn2e&af=afivpe8mmq'
     },
     {
@@ -45,7 +45,7 @@ const products = [
         name: 'Harmony Hair',
         description: 'Fórmula avançada para a saúde capilar que reduz a queda e promove o crescimento.',
         category: 'haircare',
-        image: 'https://drive.google.com/uc?export=view&id=1EywAAwqhpp7IyJ5j-J5Vx91_kEBBzlev',
+        image: 'https://i.ibb.co/XrjKSjQ5/harmony-hair.jpg',
         checkoutUrl: 'https://ev.braip.com/ref?pv=prol9enx&af=afizjy6vvg'
     },
     {
@@ -53,7 +53,7 @@ const products = [
         name: 'Brain Hacker',
         description: 'Suplemento para melhora cognitiva com ingredientes naturais.',
         category: 'supplements',
-        image: 'https://drive.google.com/uc?export=view&id=1rdYO0vLHFnZrliqCHp35hHhvEe8AWk-l',
+        image: 'https://i.ibb.co/wh4SL8DK/brain-hacker.jpg',
         checkoutUrl: 'https://pv.b4you.com.br/pages/qfxlVb_02mWCCwuO7c4yV/eIHBsTFV1o'
     }
 ];
