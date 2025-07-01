@@ -6,7 +6,8 @@ const products = [
         description: 'Suplemento natural de beleza para o bem-estar dos cabelos e da pele.',
         category: 'supplements',
         image: 'https://i.ibb.co/4wQ2PLcZ/rosa-amazonica.jpg',
-        checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883'
+        checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883',
+        whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Rosa+Amazônica'
     },
     {
         id: 2,
@@ -14,7 +15,8 @@ const products = [
         description: 'Fórmula revitalizante para a pele com propriedades antioxidantes.',
         category: 'skincare',
         image: 'https://i.ibb.co/Nd9jnb7Y/rosa-xantina.jpg',
-        checkoutUrl: 'https://ev.braip.com/ref?pv=pro9y44w&af=afi8jmg66g'
+        checkoutUrl: 'https://ev.braip.com/ref?pv=pro9y44w&af=afi8jmg66g',
+        whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Rosa+Xantina'
     },
     {
         id: 3,
@@ -22,7 +24,8 @@ const products = [
         description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
         category: 'skincare',
         image: 'https://i.ibb.co/Cp5Dv7sm/kit-sos.jpg',
-        checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290'
+        checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290',
+        whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+KIT+SOS'
     },
     {
         id: 4,
@@ -30,7 +33,8 @@ const products = [
         description: 'Blend de beleza para energia, foco e brilho exterior.',
         category: 'supplements',
         image: 'https://i.ibb.co/v6fTxLbT/bb4u.jpg',
-        checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab'
+        checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab',
+        whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+BB4U'
     },
     {
         id: 5,
@@ -38,7 +42,8 @@ const products = [
         description: 'Tratamento profissional de alisamento capilar com efeito nutritivo.',
         category: 'haircare',
         image: 'https://i.ibb.co/qFghTHTy/hidraliso.jpg',
-        checkoutUrl: 'https://ev.braip.com/ref?pv=proyyn2e&af=afivpe8mmq'
+        checkoutUrl: 'https://ev.braip.com/ref?pv=proyyn2e&af=afivpe8mmq',
+        whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Hidraliso'
     },
     {
         id: 6,
@@ -46,7 +51,8 @@ const products = [
         description: 'Fórmula avançada para a saúde capilar que reduz a queda e promove o crescimento.',
         category: 'haircare',
         image: 'https://i.ibb.co/XrjKSjQ5/harmony-hair.jpg',
-        checkoutUrl: 'https://ev.braip.com/ref?pv=prol9enx&af=afizjy6vvg'
+        checkoutUrl: 'https://ev.braip.com/ref?pv=prol9enx&af=afizjy6vvg',
+        whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Harmony+Hair'
     },
     {
         id: 7,
@@ -54,7 +60,8 @@ const products = [
         description: 'Suplemento para melhora cognitiva com ingredientes naturais.',
         category: 'supplements',
         image: 'https://i.ibb.co/wh4SL8DK/brain-hacker.jpg',
-        checkoutUrl: 'https://pv.b4you.com.br/pages/qfxlVb_02mWCCwuO7c4yV/eIHBsTFV1o'
+        checkoutUrl: 'https://pv.b4you.com.br/pages/qfxlVb_02mWCCwuO7c4yV/eIHBsTFV1o',
+        whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Brain+Hacker'
     }
 ];
 
