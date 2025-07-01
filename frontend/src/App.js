@@ -93,7 +93,7 @@ const App = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
               <h1 className="text-3xl font-bold bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent">
-                Belle Boutique
+                DA BOUTIQUE BELLE
               </h1>
             </div>
             <nav className="hidden md:flex space-x-8">
