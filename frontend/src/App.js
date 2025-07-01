@@ -86,7 +86,7 @@ const App = () => {
 
   const filteredProducts = selectedCategory === 'all' 
     ? products 
-    : products.filter(product => product.category === selectedCategory);
+    : products.filter(product => product.categories.includes(selectedCategory));
 
   const handleBuyNow = (checkoutUrl) => {
     window.open(checkoutUrl, '_blank');
