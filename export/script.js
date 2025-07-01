@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 function renderProducts() {
     const filteredProducts = currentFilter === 'all' 
         ? products 
-        : products.filter(product => product.category === currentFilter);
+        : products.filter(product => product.categories.includes(currentFilter));
 
     productsGrid.innerHTML = '';
 
