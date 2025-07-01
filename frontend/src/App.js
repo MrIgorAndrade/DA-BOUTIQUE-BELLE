@@ -112,7 +112,6 @@ const App = () => {
               <a href="#home" className="text-gray-700 hover:text-rose-500 transition-colors">Início</a>
               <a href="#products" className="text-gray-700 hover:text-rose-500 transition-colors">Produtos</a>
               <a href="#about" className="text-gray-700 hover:text-rose-500 transition-colors">Sobre Nós</a>
-              <a href="#contact" className="text-gray-700 hover:text-rose-500 transition-colors">Contato</a>
             </nav>
           </div>
         </div>
