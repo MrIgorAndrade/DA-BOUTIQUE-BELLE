@@ -4,7 +4,7 @@ const products = [
         id: 1,
         name: 'Roza Amazônica',
         description: 'Suplemento natural de beleza para o bem-estar dos cabelos e da pele.',
-        category: 'supplements',
+        category: 'skincare',
         image: 'https://i.ibb.co/4wQ2PLcZ/rosa-amazonica.jpg',
         checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883',
         whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Rosa+Amazônica'
@@ -22,7 +22,7 @@ const products = [
         id: 3,
         name: 'Kit S.O.S',
         description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
-        category: 'skincare',
+        category: 'haircare',
         image: 'https://i.ibb.co/Cp5Dv7sm/kit-sos.jpg',
         checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290',
         whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+KIT+SOS'
@@ -31,7 +31,7 @@ const products = [
         id: 4,
         name: 'BB4U',
         description: 'Blend de beleza para energia, foco e brilho exterior.',
-        category: 'supplements',
+        category: 'skincare',
         image: 'https://i.ibb.co/v6fTxLbT/bb4u.jpg',
         checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab',
         whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+BB4U'
