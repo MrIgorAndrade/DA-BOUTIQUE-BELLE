@@ -12,7 +12,8 @@ const App = () => {
       category: 'supplements',
       price: 'Compre Agora',
       image: 'https://i.ibb.co/4wQ2PLcZ/rosa-amazonica.jpg',
-      checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883'
+      checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883',
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Rosa+Amazônica'
     },
     {
       id: 2,
@@ -21,7 +22,8 @@ const App = () => {
       category: 'skincare',
       price: 'Compre Agora',
       image: 'https://i.ibb.co/Nd9jnb7Y/rosa-xantina.jpg',
-      checkoutUrl: 'https://ev.braip.com/ref?pv=pro9y44w&af=afi8jmg66g'
+      checkoutUrl: 'https://ev.braip.com/ref?pv=pro9y44w&af=afi8jmg66g',
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Rosa+Xantina'
     },
     {
       id: 3,
@@ -30,7 +32,8 @@ const App = () => {
       category: 'skincare',
       price: 'Compre Agora',
       image: 'https://i.ibb.co/Cp5Dv7sm/kit-sos.jpg',
-      checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290'
+      checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290',
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+KIT+SOS'
     },
     {
       id: 4,
@@ -39,7 +42,8 @@ const App = () => {
       category: 'supplements',
       price: 'Compre Agora',
       image: 'https://i.ibb.co/v6fTxLbT/bb4u.jpg',
-      checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab'
+      checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab',
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+BB4U'
     },
     {
       id: 5,
@@ -48,7 +52,8 @@ const App = () => {
       category: 'haircare',
       price: 'Compre Agora',
       image: 'https://i.ibb.co/qFghTHTy/hidraliso.jpg',
-      checkoutUrl: 'https://ev.braip.com/ref?pv=proyyn2e&af=afivpe8mmq'
+      checkoutUrl: 'https://ev.braip.com/ref?pv=proyyn2e&af=afivpe8mmq',
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Hidraliso'
     },
     {
       id: 6,
@@ -57,7 +62,8 @@ const App = () => {
       category: 'haircare',
       price: 'Compre Agora',
       image: 'https://i.ibb.co/XrjKSjQ5/harmony-hair.jpg',
-      checkoutUrl: 'https://ev.braip.com/ref?pv=prol9enx&af=afizjy6vvg'
+      checkoutUrl: 'https://ev.braip.com/ref?pv=prol9enx&af=afizjy6vvg',
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Harmony+Hair'
     },
     {
       id: 7,
@@ -66,7 +72,8 @@ const App = () => {
       category: 'supplements',
       price: 'Compre Agora',
       image: 'https://i.ibb.co/wh4SL8DK/brain-hacker.jpg',
-      checkoutUrl: 'https://pv.b4you.com.br/pages/qfxlVb_02mWCCwuO7c4yV/eIHBsTFV1o'
+      checkoutUrl: 'https://pv.b4you.com.br/pages/qfxlVb_02mWCCwuO7c4yV/eIHBsTFV1o',
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Brain+Hacker'
     }
   ];
 
