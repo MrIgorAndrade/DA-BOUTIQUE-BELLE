@@ -167,7 +167,7 @@ const App = () => {
               Nossa Coleção Premium
             </h3>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Produtos cuidadosamente selecionados para ajudar você a se sentir e parecer incrível
+              Produtos cuidadosamente selecionados para realçar sua beleza e bem-estar todos os dias
             </p>
           </div>
 
