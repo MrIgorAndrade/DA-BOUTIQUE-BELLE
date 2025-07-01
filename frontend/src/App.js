@@ -92,6 +92,11 @@ const App = () => {
     window.open(checkoutUrl, '_blank');
   };
 
+  // Handle WhatsApp button clicks
+  const handleWhatsApp = (whatsappUrl) => {
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50 to-white">
       {/* Header */}
