@@ -166,7 +166,18 @@ function filterProducts(category) {
     }, 300);
 }
 
-// Handle buy now button clicks
+// Handle WhatsApp button clicks
+function whatsappContact(whatsappUrl) {
+    // Add click animation
+    const button = event.target;
+    button.style.transform = 'scale(0.95)';
+    
+    setTimeout(() => {
+        button.style.transform = '';
+        // Open WhatsApp URL in new tab
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    }, 150);
+}
 function buyNow(checkoutUrl) {
     // Add click animation
     const button = event.target;
