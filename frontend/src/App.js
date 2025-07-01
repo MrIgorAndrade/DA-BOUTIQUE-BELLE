@@ -289,7 +289,7 @@ const App = () => {
                 Belle Boutique
               </h4>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                Your trusted partner in beauty and wellness. Discover the power of natural ingredients and premium formulations.
+                Sua parceira de confiança em beleza e bem-estar. Descubra o poder dos ingredientes naturais e formulações premium.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full flex items-center justify-center hover:shadow-lg transition-all duration-300">
@@ -299,38 +299,38 @@ const App = () => {
                 </a>
                 <a href="#" className="w-10 h-10 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full flex items-center justify-center hover:shadow-lg transition-all duration-300">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.294 1.194-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.751-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
                   </svg>
                 </a>
                 <a href="#" className="w-10 h-10 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full flex items-center justify-center hover:shadow-lg transition-all duration-300">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.294 1.194-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.751-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                    <path d="M12.04 0C5.408 0 .002 5.407.002 12.04c0 5.313 3.464 9.845 8.253 11.44-.113-.994-.216-2.52.046-3.604.237-1.007 1.529-6.461 1.529-6.461s-.391-.782-.391-1.937c0-1.815 1.052-3.174 2.363-3.174 1.115 0 1.654.836 1.654 1.838 0 1.12-.713 2.792-1.081 4.342-.307 1.299.652 2.358 1.936 2.358 2.323 0 4.111-2.448 4.111-5.978 0-3.123-2.247-5.307-5.458-5.307-3.718 0-5.898 2.789-5.898 5.673 0 1.123.433 2.329.973 2.982.107.131.122.245.09.378-.1.408-.32 1.301-.363 1.484-.057.245-.187.296-.43.179-1.624-.758-2.639-3.135-2.639-5.046 0-4.118 2.991-7.897 8.625-7.897 4.527 0 8.045 3.229 8.045 7.548 0 4.505-2.84 8.127-6.788 8.127-1.325 0-2.573-.688-2.998-1.508l-.815 3.109c-.295 1.137-1.092 2.561-1.625 3.426 1.223.479 2.521.74 3.885.74 6.63 0 12.036-5.376 12.036-12.005C24.076 5.407 18.67.001 12.04.001z"/>
                   </svg>
                 </a>
               </div>
             </div>
             <div>
-              <h5 className="text-lg font-semibold mb-4">Quick Links</h5>
+              <h5 className="text-lg font-semibold mb-4">Links Rápidos</h5>
               <ul className="space-y-2">
-                <li><a href="#home" className="text-gray-400 hover:text-rose-400 transition-colors">Home</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Products</a></li>
-                <li><a href="#about" className="text-gray-400 hover:text-rose-400 transition-colors">About</a></li>
-                <li><a href="#contact" className="text-gray-400 hover:text-rose-400 transition-colors">Contact</a></li>
+                <li><a href="#home" className="text-gray-400 hover:text-rose-400 transition-colors">Início</a></li>
+                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Produtos</a></li>
+                <li><a href="#about" className="text-gray-400 hover:text-rose-400 transition-colors">Sobre Nós</a></li>
+                <li><a href="#contact" className="text-gray-400 hover:text-rose-400 transition-colors">Contato</a></li>
               </ul>
             </div>
             <div>
-              <h5 className="text-lg font-semibold mb-4">Categories</h5>
+              <h5 className="text-lg font-semibold mb-4">Categorias</h5>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-rose-400 transition-colors">Skincare</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-rose-400 transition-colors">Hair Care</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-rose-400 transition-colors">Supplements</a></li>
-                <li><a href="#" className="text-gray-400 hover:text-rose-400 transition-colors">Wellness</a></li>
+                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Cuidados com a Pele</a></li>
+                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Cuidados Capilares</a></li>
+                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Suplementos</a></li>
+                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Bem-estar</a></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-              © 2025 Belle Boutique. All rights reserved. Made with ❤️ for beautiful you.
+              © 2025 Belle Boutique. Todos os direitos reservados. Feito com ❤️ para você linda.
             </p>
           </div>
         </div>
