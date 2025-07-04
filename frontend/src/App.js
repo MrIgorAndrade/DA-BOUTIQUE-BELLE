@@ -270,9 +270,11 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
-              <h4 className="text-2xl font-bold bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                DA BOUTIQUE BELLE
-              </h4>
+              <img 
+                src="https://i.ibb.co/135HmsP/logo.png" 
+                alt="DA BOUTIQUE BELLE" 
+                className="h-8 w-auto mb-4"
+              />
               <p className="text-gray-400 mb-6 leading-relaxed">
                 Sua parceira de confiança em beleza e bem-estar. Descubra o poder dos ingredientes naturais e formulações premium.
               </p>
