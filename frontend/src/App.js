@@ -104,9 +104,11 @@ const App = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
-              <h1 className="text-3xl font-bold bg-gradient-to-r from-rose-500 to-pink-600 bg-clip-text text-transparent">
-                DA BOUTIQUE BELLE
-              </h1>
+              <img 
+                src="https://i.ibb.co/135HmsP/logo.png" 
+                alt="DA BOUTIQUE BELLE" 
+                className="h-12 w-auto"
+              />
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#home" className="text-gray-700 hover:text-rose-500 transition-colors">Início</a>
