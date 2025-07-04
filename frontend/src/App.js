@@ -108,7 +108,7 @@ const App = () => {
                 src="https://i.ibb.co/135HmsP/logo.png" 
                 alt="DA BOUTIQUE BELLE" 
                 className="w-72 h-9"
-                style={{width: '292px', height: '36px'}}
+                style={{width: '350px', height: '43px'}}
               />
             </div>
             <nav className="hidden md:flex space-x-8">
