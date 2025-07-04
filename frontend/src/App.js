@@ -107,7 +107,7 @@ const App = () => {
               <img 
                 src="https://i.ibb.co/135HmsP/logo.png" 
                 alt="DA BOUTIQUE BELLE" 
-                className="h-12 w-auto"
+                className="max-h-16 w-auto"
               />
             </div>
             <nav className="hidden md:flex space-x-8">
