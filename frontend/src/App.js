@@ -272,10 +272,11 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <img 
-                src="https://i.ibb.co/135HmsP/logo.png" 
-                alt="DA BOUTIQUE BELLE" 
+                src="https://i.ibb.co/135HmsP/banner.jpg" 
+                alt="DA BOUTIQUE BELLE Banner" 
+                width="220"
+                height="27"
                 className="mb-4"
-                style={{width: '260px', height: '32px'}}
               />
               <p className="text-gray-400 mb-6 leading-relaxed">
                 Sua parceira de confiança em beleza e bem-estar. Descubra o poder dos ingredientes naturais e formulações premium.
