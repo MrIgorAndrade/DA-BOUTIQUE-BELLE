@@ -105,10 +105,10 @@ const App = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
               <img 
-                src="https://i.ibb.co/135HmsP/logo.png" 
-                alt="DA BOUTIQUE BELLE" 
-                className="w-72 h-9"
-                style={{width: '350px', height: '43px'}}
+                src="https://i.ibb.co/135HmsP/banner.jpg" 
+                alt="DA BOUTIQUE BELLE Banner" 
+                width="292"
+                height="36"
               />
             </div>
             <nav className="hidden md:flex space-x-8">
