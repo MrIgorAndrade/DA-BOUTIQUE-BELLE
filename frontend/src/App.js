@@ -272,7 +272,7 @@ const App = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <img 
-                src="https://i.ibb.co/135HmsP/banner.jpg" 
+                src="https://i.ibb.co/135HmsP" 
                 alt="DA BOUTIQUE BELLE Banner" 
                 width="220"
                 height="27"
