@@ -273,7 +273,7 @@ const App = () => {
               <img 
                 src="https://i.ibb.co/135HmsP/logo.png" 
                 alt="DA BOUTIQUE BELLE" 
-                className="h-8 w-auto mb-4"
+                className="max-h-12 w-auto mb-4"
               />
               <p className="text-gray-400 mb-6 leading-relaxed">
                 Sua parceira de confiança em beleza e bem-estar. Descubra o poder dos ingredientes naturais e formulações premium.
