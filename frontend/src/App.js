@@ -105,7 +105,7 @@ const App = () => {
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center">
               <img 
-                src="https://i.ibb.co/135HmsP" 
+                src="https://i.ibb.co/5dyqRYS/logo-da-belle-2.png" 
                 alt="DA BOUTIQUE BELLE Banner" 
                 width="292"
                 height="36"
