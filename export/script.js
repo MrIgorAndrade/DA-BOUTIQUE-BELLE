@@ -204,6 +204,12 @@ function handleCategoryClick(categoryId) {
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
+    // Update products count dynamically
+    const productsCountElement = document.getElementById('products-count');
+    if (productsCountElement) {
+        productsCountElement.textContent = products.length;
+    }
+    
     // Render category buttons
     const categoryContainer = document.getElementById('category-container');
     categories.forEach(category => {
