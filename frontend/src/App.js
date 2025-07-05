@@ -92,7 +92,7 @@ const App = () => {
       name: 'Brain Hacker',
       description: 'Suplemento para melhora cognitiva com ingredientes naturais.',
       categories: ['supplements'],
-      image: 'https://i.ibb.co/cKnGD8C/BRAIN-HACKER-PNG.png',
+      image: 'https://i.ibb.co/cKnGD8CC/BRAIN-HACKER-PNG.png',
       buttons: [
         { url: 'https://pv.b4you.com.br/api/product/c/UiHrvk5ZIm/eIHBsTFV1o', text: 'BrainHacker + 1Mind + 1Focus R$157,90', color: 'from-cyan-600 to-blue-700' }
       ],
