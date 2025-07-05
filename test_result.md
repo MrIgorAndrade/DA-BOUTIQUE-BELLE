@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Create an elegant, feminine, and modern website for showcasing and selling beauty products targeted at a female audience. The design should be clean, sophisticated, and visually appealing, using a soft color palette (such as pinks, nudes, white, and gold), delicate typography, and an intuitive layout. Features include homepage, product catalog with filters, product detail pages, shopping cart, checkout process, beauty blog, about us page, and footer with contact form."
+user_problem_statement: "Atualizar as imagens dos produtos do site DA BOUTIQUE BELLE com novos links do ImgBB fornecidos pelo usuário para os 8 produtos: Rosa Amazônica, Rosa Xantina, BB4U, Kit S.O.S, Hidraliso, Harmony Hair, Brain Hacker, e Cabelo Pele & Unhas."
 
 frontend:
   - task: "Hero Section and Homepage Design"
