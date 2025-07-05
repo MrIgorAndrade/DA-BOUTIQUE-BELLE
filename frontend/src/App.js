@@ -36,7 +36,7 @@ const App = () => {
       name: 'BB4U',
       description: 'Blend de beleza para energia, foco e brilho exterior.',
       categories: ['supplements', 'skincare', 'haircare'],
-      image: 'https://i.ibb.co/4wf0QPs/BB4U-PNG.png',
+      image: 'https://i.ibb.co/4wf0QPQs/BB4U-PNG.png',
       buttons: [
         { url: 'https://pv.b4you.com.br/api/product/c/0k-w9Kx9Px/4dEPHbx8Ab', text: '1 Vitamina BB4U R$ 189,90', color: 'from-purple-500 to-indigo-600' },
         { url: 'https://pv.b4you.com.br/api/product/c/7TNyQwdDxw/4dEPHbx8Ab', text: '2 Vitaminas +1 Condicionador +1 Shampoo R$ 299,90', color: 'from-purple-500 to-indigo-600' },
