@@ -289,7 +289,7 @@ const App = () => {
                   <div className="text-gray-700">Ingredientes Naturais</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-rose-500 mb-2">7</div>
+                  <div className="text-3xl font-bold text-rose-500 mb-2">{products.length}</div>
                   <div className="text-gray-700">Produtos Premium</div>
                 </div>
               </div>
