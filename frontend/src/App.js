@@ -50,7 +50,7 @@ const App = () => {
       name: 'Kit S.O.S',
       description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
       categories: ['haircare'],
-      image: 'https://i.ibb.co/99SQwYM/KIT-SOS-PNG.png',
+      image: 'https://i.ibb.co/99SQwYXM/KIT-SOS-PNG.png',
       buttons: [
         { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=LB274419', text: '3 Tônico, 2 Máscara, 2 Shampoo, 1 Óleo de Argan, 1 Condicionador 2em1 R$ 299,00', color: 'from-amber-500 to-yellow-600' },
         { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=JE132223', text: '1 Kit SOS Crescimento R$ 179,00', color: 'from-amber-500 to-yellow-600' },
