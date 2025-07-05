@@ -243,12 +243,15 @@ const App = () => {
                   <h4 className="text-xl font-bold text-gray-900 mb-2">{product.name}</h4>
                   <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
                   <div className="space-y-3">
-                    <button
-                      onClick={() => handleBuyNow(product.checkoutUrl)}
-                      className="w-full px-6 py-3 bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
-                    >
-                      Comprar Agora
-                    </button>
+                    {product.buttons.map((button, index) => (
+                      <button
+                        key={index}
+                        onClick={() => handleBuyNow(button.url)}
+                        className={`w-full px-6 py-3 bg-gradient-to-r ${button.color} text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300`}
+                      >
+                        {button.text}
+                      </button>
+                    ))}
                     <button
                       onClick={() => handleWhatsApp(product.whatsappUrl)}
                       className="w-full px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2"
