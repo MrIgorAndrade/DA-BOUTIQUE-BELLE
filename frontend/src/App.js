@@ -103,7 +103,7 @@ const App = () => {
       name: 'Cabelo, Pele & Unhas',
       description: 'Suplemento completo para fortalecer cabelos, pele e unhas.',
       categories: ['haircare', 'skincare', 'supplements'],
-      image: 'https://i.ibb.co/F4QbKsM/CABELO-PELE-UNHAS.png',
+      image: 'https://i.ibb.co/F4QbKsMY/CABELO-PELE-UNHAS.png',
       buttons: [
         { url: 'https://app.monetizze.com.br/r/AMR25407564?u=c&pl=KU309568', text: '1 POTE R$ 127,00', color: 'from-pink-500 to-rose-500' },
         { url: 'https://app.monetizze.com.br/r/AMR25407564?u=c&pl=TF309569', text: '2 POTES + 1 Grátis R$ 227,00', color: 'from-pink-500 to-rose-500' },
