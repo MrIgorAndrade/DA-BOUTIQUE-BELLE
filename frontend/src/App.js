@@ -10,9 +10,12 @@ const App = () => {
       name: 'Roza Amazônica',
       description: 'Suplemento natural de beleza para o bem-estar dos cabelos e da pele.',
       categories: ['skincare'],
-      price: 'Compre Agora',
-      image: 'https://i.ibb.co/4wQ2PLcZ/rosa-amazonica.jpg',
-      checkoutUrl: 'https://ev.braip.com/ref?pv=proeo8oe&af=afijpxl883',
+      image: 'https://i.ibb.co/h0yr6Zy/ROZA-AMAZONICA.png',
+      buttons: [
+        { url: 'https://ev.braip.com/ref?pl=plamoxem&ck=chezlmgr&af=afijpxl883', text: '1 Frasco + 1 Grátis — R$197', color: 'from-rose-500 to-pink-600' },
+        { url: 'https://ev.braip.com/ref?pl=playxgyo&ck=chezlmgr&af=afijpxl883', text: '3 Frascos + 1 Grátis — R$297', color: 'from-rose-500 to-pink-600' },
+        { url: 'https://ev.braip.com/ref?pl=plax2qpn&ck=chezlmgr&af=afijpxl883', text: '5 Frascos + 1 Grátis — R$397', color: 'from-rose-500 to-pink-600' }
+      ],
       whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Rosa+Amazônica'
     },
     {
@@ -20,39 +23,55 @@ const App = () => {
       name: 'Rosa Xantina',
       description: 'Fórmula revitalizante para a pele com propriedades antioxidantes.',
       categories: ['skincare', 'haircare', 'supplements'],
-      price: 'Compre Agora',
-      image: 'https://i.ibb.co/Nd9jnb7Y/rosa-xantina.jpg',
-      checkoutUrl: 'https://ev.braip.com/ref?pv=pro9y44w&af=afi8jmg66g',
+      image: 'https://i.ibb.co/ynJPxds/ROSA-XANTINA.png',
+      buttons: [
+        { url: 'https://ev.braip.com/ref?pl=plaj002g&ck=che1wmnj&af=afi8jmg66g', text: '1 Pote + 1 Grátis — R$197', color: 'from-pink-500 to-rose-600' },
+        { url: 'https://ev.braip.com/ref?pl=plan0010&ck=che1wmnj&af=afi8jmg66g', text: '3 Potes + 1 Grátis — R$297', color: 'from-pink-500 to-rose-600' },
+        { url: 'https://ev.braip.com/ref?pl=plawddjn&ck=che1wmnj&af=afi8jmg66g', text: '5 Potes + 1 Grátis — R$397', color: 'from-pink-500 to-rose-600' }
+      ],
       whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Rosa+Xantina'
     },
     {
       id: 3,
-      name: 'Kit S.O.S',
-      description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
-      categories: ['haircare'],
-      price: 'Compre Agora',
-      image: 'https://i.ibb.co/Cp5Dv7sm/kit-sos.jpg',
-      checkoutUrl: 'https://app.monetizze.com.br/r/ARU25256290',
-      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+KIT+SOS'
-    },
-    {
-      id: 4,
       name: 'BB4U',
       description: 'Blend de beleza para energia, foco e brilho exterior.',
       categories: ['supplements', 'skincare', 'haircare'],
-      price: 'Compre Agora',
-      image: 'https://i.ibb.co/v6fTxLbT/bb4u.jpg',
-      checkoutUrl: 'https://pv.b4you.com.br/pages/97e22b30-02ed-417f-bc43-5c0d81a45370/4dEPHbx8Ab',
+      image: 'https://i.ibb.co/4wf0QPs/BB4U-PNG.png',
+      buttons: [
+        { url: 'https://pv.b4you.com.br/api/product/c/0k-w9Kx9Px/4dEPHbx8Ab', text: '1 Vitamina BB4U — R$189,90', color: 'from-purple-500 to-indigo-600' },
+        { url: 'https://pv.b4you.com.br/api/product/c/7TNyQwdDxw/4dEPHbx8Ab', text: '2 Vitaminas + Cond. + Shampoo — R$299,90', color: 'from-purple-500 to-indigo-600' },
+        { url: 'https://pv.b4you.com.br/api/product/c/721p69gquM/4dEPHbx8Ab', text: '3 Vitaminas + Kit 3 Máscaras — R$399,90', color: 'from-purple-500 to-indigo-600' },
+        { url: 'https://pv.b4you.com.br/api/product/c/Bh-UNR_pY_/4dEPHbx8Ab', text: '3 Vitaminas + Kit Completo — R$599,90', color: 'from-purple-500 to-indigo-600' }
+      ],
       whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+BB4U'
+    },
+    {
+      id: 4,
+      name: 'Kit S.O.S',
+      description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
+      categories: ['haircare'],
+      image: 'https://i.ibb.co/99SQwYM/KIT-SOS-PNG.png',
+      buttons: [
+        { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=LB274419', text: 'Kit Completo — R$299,00', color: 'from-amber-500 to-yellow-600' },
+        { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=JE132223', text: 'Kit SOS Crescimento — R$179,00', color: 'from-amber-500 to-yellow-600' },
+        { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=SB219235', text: 'Tônico SOS — R$59,99', color: 'from-amber-500 to-yellow-600' },
+        { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=EC279015', text: 'Condicionador Crescimento — R$59,99', color: 'from-amber-500 to-yellow-600' },
+        { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=ZW326037', text: 'Shampoo SOS — R$59,99', color: 'from-amber-500 to-yellow-600' },
+        { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=CN326040', text: 'Máscara SOS — R$59,99', color: 'from-amber-500 to-yellow-600' }
+      ],
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+KIT+SOS'
     },
     {
       id: 5,
       name: 'Hidraliso',
       description: 'Tratamento profissional de alisamento capilar com efeito nutritivo.',
       categories: ['haircare'],
-      price: 'Compre Agora',
-      image: 'https://i.ibb.co/qFghTHTy/hidraliso.jpg',
-      checkoutUrl: 'https://ev.braip.com/ref?pv=proyyn2e&af=afivpe8mmq',
+      image: 'https://i.ibb.co/PsBwfvg/HIDRALISO.png',
+      buttons: [
+        { url: 'https://ev.braip.com/ref?pl=plaerpgw&ck=chev95og&af=afivpe8mmq', text: '1 Hidraliso + Brindes — R$168,44', color: 'from-emerald-500 to-teal-600' },
+        { url: 'https://ev.braip.com/ref?pl=planlvk0&ck=chev95og&af=afivpe8mmq', text: '2 Hidraliso + Brindes — R$211,19', color: 'from-emerald-500 to-teal-600' },
+        { url: 'https://ev.braip.com/ref?pl=plaov1k2&ck=chev95og&af=afivpe8mmq', text: '3 Hidraliso + Brindes — R$296,69', color: 'from-emerald-500 to-teal-600' }
+      ],
       whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Hidraliso'
     },
     {
@@ -60,9 +79,12 @@ const App = () => {
       name: 'Harmony Hair',
       description: 'Fórmula avançada para a saúde capilar que reduz a queda e promove o crescimento.',
       categories: ['haircare', 'skincare', 'supplements'],
-      price: 'Compre Agora',
-      image: 'https://i.ibb.co/XrjKSjQ5/harmony-hair.jpg',
-      checkoutUrl: 'https://ev.braip.com/ref?pv=prol9enx&af=afizjy6vvg',
+      image: 'https://i.ibb.co/p6tBVsF/HARMONY-HAIR.png',
+      buttons: [
+        { url: 'https://ev.braip.com/ref?pl=pla7vo9n&ck=che2z0mp&af=afizjy6vvg', text: '1 Frasco + 1 Grátis — R$197,00', color: 'from-fuchsia-600 to-pink-500' },
+        { url: 'https://ev.braip.com/ref?pl=pla51qn2&ck=che2z0mp&af=afizjy6vvg', text: '2 Frascos + 2 Grátis — R$297,00', color: 'from-fuchsia-600 to-pink-500' },
+        { url: 'https://ev.braip.com/ref?pl=pla3dvx4&ck=che2z0mp&af=afizjy6vvg', text: '3 Frascos + 3 Grátis — R$397,00', color: 'from-fuchsia-600 to-pink-500' }
+      ],
       whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Harmony+Hair'
     },
     {
@@ -70,10 +92,24 @@ const App = () => {
       name: 'Brain Hacker',
       description: 'Suplemento para melhora cognitiva com ingredientes naturais.',
       categories: ['supplements'],
-      price: 'Compre Agora',
-      image: 'https://i.ibb.co/wh4SL8DK/brain-hacker.jpg',
-      checkoutUrl: 'https://pv.b4you.com.br/pages/qfxlVb_02mWCCwuO7c4yV/eIHBsTFV1o',
+      image: 'https://i.ibb.co/cKnGD8C/BRAIN-HACKER-PNG.png',
+      buttons: [
+        { url: 'https://pv.b4you.com.br/api/product/c/UiHrvk5ZIm/eIHBsTFV1o', text: 'Brain Hacker Combo — R$157,90', color: 'from-cyan-600 to-blue-700' }
+      ],
       whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Brain+Hacker'
+    },
+    {
+      id: 8,
+      name: 'Cabelo, Pele & Unhas',
+      description: 'Suplemento completo para fortalecer cabelos, pele e unhas.',
+      categories: ['haircare', 'skincare', 'supplements'],
+      image: 'https://i.ibb.co/F4QbKsM/CABELO-PELE-UNHAS.png',
+      buttons: [
+        { url: 'https://app.monetizze.com.br/r/AMR25407564?u=c&pl=KU309568', text: '1 Pote — R$127,00', color: 'from-pink-500 to-rose-500' },
+        { url: 'https://app.monetizze.com.br/r/AMR25407564?u=c&pl=TF309569', text: '2 Potes + 1 Grátis — R$227,00', color: 'from-pink-500 to-rose-500' },
+        { url: 'https://app.monetizze.com.br/r/AMR25407564?u=c&pl=MU317280', text: '1 Pote + Kit SOS — R$199,00', color: 'from-pink-500 to-rose-500' }
+      ],
+      whatsappUrl: 'https://wa.me/5534998965230?text=Olá%21+Gostaria+de+saber+mais+sobre+o+Cabelo+Pele+e+Unhas'
     }
   ];
 
