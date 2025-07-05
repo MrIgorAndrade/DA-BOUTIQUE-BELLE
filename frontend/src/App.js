@@ -79,7 +79,7 @@ const App = () => {
       name: 'Harmony Hair',
       description: 'Fórmula avançada para a saúde capilar que reduz a queda e promove o crescimento.',
       categories: ['haircare', 'skincare', 'supplements'],
-      image: 'https://i.ibb.co/p6tBVsF/HARMONY-HAIR.png',
+      image: 'https://i.ibb.co/p6tBVsFM/HARMONY-HAIR.png',
       buttons: [
         { url: 'https://ev.braip.com/ref?pl=pla7vo9n&ck=che2z0mp&af=afizjy6vvg', text: '1 Frascos + 1 Grátis R$ 197,00', color: 'from-fuchsia-600 to-pink-500' },
         { url: 'https://ev.braip.com/ref?pl=pla51qn2&ck=che2z0mp&af=afizjy6vvg', text: '2 Frascos + 2 Grátis R$ 297,00', color: 'from-fuchsia-600 to-pink-500' },
