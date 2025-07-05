@@ -66,7 +66,7 @@ const App = () => {
       name: 'Hidraliso',
       description: 'Tratamento profissional de alisamento capilar com efeito nutritivo.',
       categories: ['haircare'],
-      image: 'https://i.ibb.co/PsBwfvg/HIDRALISO.png',
+      image: 'https://i.ibb.co/PsBwfvgv/HIDRALISO.png',
       buttons: [
         { url: 'https://ev.braip.com/ref?pl=plaerpgw&ck=chev95og&af=afivpe8mmq', text: '1 Hidraliso +1 Shampoo +1 Termo R$ 168,44', color: 'from-emerald-500 to-teal-600' },
         { url: 'https://ev.braip.com/ref?pl=planlvk0&ck=chev95og&af=afivpe8mmq', text: '2 Hidraliso +1 Shampoo +1 Termo R$ 211,19', color: 'from-emerald-500 to-teal-600' },
