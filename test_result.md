@@ -131,6 +131,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Remodelada a seção de dúvidas com visual mais elegante e harmonioso: background branco com borda rosa, título 'Ainda tem dúvidas?', texto mais refinado, botão 'Falar com Especialista' e decoração com círculos rosa."
+        - working: true
+          agent: "main"
+          comment: "Alterada para layout de duas colunas: lado esquerdo com título grande 'Quer tirar dúvidas?' (text-4xl a text-6xl), lado direito com texto explicativo original e botão 'QUERO TIRAR UMA DÚVIDA'. Layout responsivo com grid system."
 
   - task: "Contador Dinâmico de Produtos"
     implemented: true
