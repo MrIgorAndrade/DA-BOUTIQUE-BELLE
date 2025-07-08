@@ -310,7 +310,7 @@ const App = () => {
                   <div className="text-left">
                     <div className="mb-6">
                       <p className="text-lg text-black leading-relaxed">
-                        Se ainda não decidiu qual do nossos produto pode te ajudar, nós temos um WhatsApp exclusivo para tirar qualquer dúvida! Basta clicar no botão abaixo e irá falar diretamente com um de nossos especialistas.
+                        Se ainda não decidiu qual dos nossos produtos pode te ajudar, nós temos um WhatsApp exclusivo para tirar qualquer dúvida! Basta clicar no botão abaixo e irá falar diretamente com um de nossos especialistas.
                       </p>
                     </div>
                     
