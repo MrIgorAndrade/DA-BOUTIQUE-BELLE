@@ -105,6 +105,30 @@
 user_problem_statement: "Atualizar as imagens dos produtos do site DA BOUTIQUE BELLE com novos links do ImgBB fornecidos pelo usuário para os 8 produtos: Rosa Amazônica, Rosa Xantina, BB4U, Kit S.O.S, Hidraliso, Harmony Hair, Brain Hacker, e Cabelo Pele & Unhas."
 
 frontend:
+  - task: "Seção de Dúvidas com WhatsApp"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Substituída a imagem da seção About por uma nova seção 'Quer tirar dúvidas?' com background gradiente rosa, texto explicativo e botão do WhatsApp para contato direto com especialistas. Implementado tanto no React App quanto no arquivo de exportação estática."
+
+  - task: "Contador Dinâmico de Produtos"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Substituído o número hardcoded '7' por um contador dinâmico que conta automaticamente os produtos usando products.length. Agora mostra '8 Produtos Premium' e se atualizará automaticamente quando novos produtos forem adicionados."
+
   - task: "Atualização das Imagens dos Produtos"
     implemented: true
     working: true
