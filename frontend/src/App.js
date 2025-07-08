@@ -381,6 +381,14 @@ const App = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center">
+            {/* Bandeiras das Pagadoras */}
+            <div className="mb-6">
+              <img 
+                src="https://i.ibb.co/0pHf4PJv/bandeiras-pagadoras.png" 
+                alt="Formas de Pagamento Aceitas" 
+                className="mx-auto max-w-sm h-auto"
+              />
+            </div>
             <p className="text-gray-400">
               © 2025 DA BOUTIQUE BELLE. Todos os direitos reservados. Feito com ❤️ para você linda.
             </p>
