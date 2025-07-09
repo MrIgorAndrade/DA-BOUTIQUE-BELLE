@@ -23,7 +23,7 @@ const App = () => {
       name: 'Rosa Xantina',
       description: 'Fórmula revitalizante para a pele com propriedades antioxidantes.',
       categories: ['skincare', 'haircare', 'supplements'],
-      image: 'https://i.ibb.co/ynJPxds6/ROSA-XANTINA.png',
+      image: 'https://i.ibb.co/TxpwbLwS/ROSA-XANTINA.png',
       buttons: [
         { url: 'https://ev.braip.com/ref?pl=plaj002g&ck=che1wmnj&af=afi8jmg66g', text: '1 Pote + 1 Grátis R$ 197,00', color: 'from-pink-500 to-rose-600' },
         { url: 'https://ev.braip.com/ref?pl=plan0010&ck=che1wmnj&af=afi8jmg66g', text: '3 Pote + 1 Grátis R$ 297,00', color: 'from-pink-500 to-rose-600' },
