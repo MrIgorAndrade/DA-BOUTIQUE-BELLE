@@ -280,8 +280,10 @@ document.addEventListener('DOMContentLoaded', function() {
 // Carousel Functions
 function initializeCarousel() {
     const thumbnailsContainer = document.getElementById('carousel-thumbnails');
+    const indicatorsContainer = document.getElementById('carousel-indicators');
     const mainImageMobile = document.getElementById('carousel-main-image-mobile');
     const mainImageDesktop = document.getElementById('carousel-main-image-desktop');
+    const carouselContainer = document.getElementById('carousel-container');
     const prevBtn = document.getElementById('carousel-prev');
     const nextBtn = document.getElementById('carousel-next');
     
@@ -300,16 +302,49 @@ function initializeCarousel() {
         thumbnailsContainer.appendChild(thumbnail);
     });
     
+    // Generate indicators
+    carouselImages.forEach((_, index) => {
+        const indicator = document.createElement('button');
+        indicator.className = `w-2 h-2 rounded-full transition-all duration-300 ${
+            index === 0 ? 'bg-white' : 'bg-white/50 hover:bg-white/70'
+        }`;
+        indicator.addEventListener('click', () => changeSlide(index));
+        indicatorsContainer.appendChild(indicator);
+    });
+    
     // Navigation buttons
     prevBtn.addEventListener('click', () => {
-        currentSlide = currentSlide === 0 ? carouselImages.length - 1 : currentSlide - 1;
-        updateCarousel();
+        changeSlide(currentSlide === 0 ? carouselImages.length - 1 : currentSlide - 1);
     });
     
     nextBtn.addEventListener('click', () => {
-        currentSlide = currentSlide === carouselImages.length - 1 ? 0 : currentSlide + 1;
-        updateCarousel();
+        changeSlide(currentSlide === carouselImages.length - 1 ? 0 : currentSlide + 1);
     });
+    
+    // Pause on hover (desktop only)
+    if (window.innerWidth >= 768) {
+        carouselContainer.addEventListener('mouseenter', () => {
+            isAutoplayPaused = true;
+            clearInterval(autoplayInterval);
+        });
+        
+        carouselContainer.addEventListener('mouseleave', () => {
+            isAutoplayPaused = false;
+            startAutoplay();
+        });
+    }
+    
+    // Start autoplay
+    startAutoplay();
+}
+
+function startAutoplay() {
+    if (!isAutoplayPaused) {
+        autoplayInterval = setInterval(() => {
+            currentSlide = currentSlide === carouselImages.length - 1 ? 0 : currentSlide + 1;
+            updateCarousel();
+        }, 4000); // 4 segundos
+    }
 }
 
 function changeSlide(index) {
@@ -321,6 +356,7 @@ function updateCarousel() {
     const mainImageMobile = document.getElementById('carousel-main-image-mobile');
     const mainImageDesktop = document.getElementById('carousel-main-image-desktop');
     const thumbnails = document.querySelectorAll('#carousel-thumbnails button');
+    const indicators = document.querySelectorAll('#carousel-indicators button');
     
     // Update both main images
     if (mainImageMobile) {
@@ -339,6 +375,15 @@ function updateCarousel() {
             thumbnail.className = 'flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ring-2 ring-rose-500 opacity-100 scale-105';
         } else {
             thumbnail.className = 'flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 opacity-70 hover:opacity-90 hover:scale-105';
+        }
+    });
+    
+    // Update indicator states
+    indicators.forEach((indicator, index) => {
+        if (index === currentSlide) {
+            indicator.className = 'w-2 h-2 rounded-full transition-all duration-300 bg-white';
+        } else {
+            indicator.className = 'w-2 h-2 rounded-full transition-all duration-300 bg-white/50 hover:bg-white/70';
         }
     });
 }
