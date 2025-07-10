@@ -131,6 +131,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Removidas bordas brancas e implementado aspect-ratio responsivo: Mobile usa aspect-[4/5], Desktop usa aspect-video (16:9), object-cover em todas as imagens, remoção de bg-gray-50, overflow-hidden aplicado, max-w-4xl para largura otimizada, miniaturas sem fundo, layout totalmente profissional."
+        - working: true
+          agent: "main"
+          comment: "Ajustado aspect-ratio do mobile de aspect-[4/5] para aspect-[4/4] (quadrado) conforme sugestão do usuário. Agora tanto mobile quanto desktop têm formatos mais harmoniosos e consistentes."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
