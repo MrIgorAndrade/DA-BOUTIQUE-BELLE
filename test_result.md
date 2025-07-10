@@ -105,6 +105,30 @@
 user_problem_statement: "Atualizar as imagens dos produtos do site DA BOUTIQUE BELLE com novos links do ImgBB fornecidos pelo usuário para os 8 produtos: Rosa Amazônica, Rosa Xantina, BB4U, Kit S.O.S, Hidraliso, Harmony Hair, Brain Hacker, e Cabelo Pele & Unhas."
 
 frontend:
+  - task: "Carrossel de Imagens Hero Section"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Substituída a imagem estática da hero section por um carrossel responsivo com 8 imagens dos produtos. Implementado com navegação por setas, miniaturas clicáveis, transições suaves (450ms ease-out), altura de 400px e design responsivo. Funcional tanto no React App quanto na versão estática."
+
+  - task: "Atualização da Imagem Rosa Xantina"
+    implemented: true
+    working: true
+    file: "/app/frontend/src/App.js"
+    stuck_count: 0
+    priority: "medium"
+    needs_retesting: false
+    status_history:
+        - working: true
+          agent: "main"
+          comment: "Atualizada a imagem do produto Rosa Xantina para o novo link: https://i.ibb.co/TxpwbLwS/ROSA-XANTINA.png. Substituído tanto no React App quanto no arquivo de exportação estática."
+
   - task: "Bandeiras das Pagadoras no Rodapé"
     implemented: true
     working: true
