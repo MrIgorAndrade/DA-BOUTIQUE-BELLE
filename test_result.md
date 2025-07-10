@@ -128,6 +128,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Implementado autoplay no carrossel com intervalo de 4 segundos, loop infinito, pause on hover no desktop, navegação manual funcional sem interromper autoplay, transições suaves de 700ms, indicadores visuais (dots) adicionais e compatibilidade total com React e versão estática."
+        - working: true
+          agent: "main"
+          comment: "Removidas bordas brancas e implementado aspect-ratio responsivo: Mobile usa aspect-[4/5], Desktop usa aspect-video (16:9), object-cover em todas as imagens, remoção de bg-gray-50, overflow-hidden aplicado, max-w-4xl para largura otimizada, miniaturas sem fundo, layout totalmente profissional."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
