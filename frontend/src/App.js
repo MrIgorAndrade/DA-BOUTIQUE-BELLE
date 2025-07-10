@@ -220,27 +220,27 @@ const App = () => {
         
         {/* Carrossel de Imagens */}
         <div className="mt-16 relative">
-          <div className="max-w-3xl mx-auto px-4">
+          <div className="max-w-4xl mx-auto px-4">
             {/* Imagem Principal */}
             <div 
               className="relative rounded-3xl shadow-2xl overflow-hidden mb-4"
               onMouseEnter={() => setIsAutoplayPaused(true)}
               onMouseLeave={() => setIsAutoplayPaused(false)}
             >
-              {/* Mobile: aspect ratio original com object-contain - reduzido */}
+              {/* Mobile: aspect-[4/5] */}
               <div className="block md:hidden">
-                <div className="w-full h-48 sm:h-56 bg-gray-50 flex items-center justify-center">
+                <div className="w-full aspect-[4/5] overflow-hidden">
                   <img 
                     src={carouselImages[currentSlide].src}
                     alt={carouselImages[currentSlide].alt}
-                    className="max-w-full max-h-full object-contain transition-all duration-700 ease-in-out"
+                    className="w-full h-full object-cover transition-all duration-700 ease-in-out"
                   />
                 </div>
               </div>
               
-              {/* Desktop: largura máxima de 70% e altura proporcional */}
+              {/* Desktop: aspect-video (16/9) */}
               <div className="hidden md:block">
-                <div className="w-full max-w-[70%] mx-auto bg-gray-50 flex items-center justify-center" style={{aspectRatio: '1/1'}}>
+                <div className="w-full aspect-video overflow-hidden">
                   <img 
                     src={carouselImages[currentSlide].src}
                     alt={carouselImages[currentSlide].alt}
@@ -296,11 +296,11 @@ const App = () => {
                       : 'opacity-70 hover:opacity-90 hover:scale-105'
                   }`}
                 >
-                  <div className="w-14 h-10 md:w-16 md:h-12 bg-gray-50 flex items-center justify-center">
+                  <div className="w-14 h-10 md:w-16 md:h-12 overflow-hidden rounded-lg">
                     <img
                       src={image.src}
                       alt={image.alt}
-                      className="max-w-full max-h-full object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </button>
