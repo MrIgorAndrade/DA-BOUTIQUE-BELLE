@@ -136,7 +136,7 @@ frontend:
           comment: "Ajustado aspect-ratio do mobile de aspect-[4/5] para aspect-[4/4] (quadrado) conforme sugestão do usuário. Agora tanto mobile quanto desktop têm formatos mais harmoniosos e consistentes."
         - working: true
           agent: "main"
-          comment: "Corrigido CSS para forçar modo claro em todos os navegadores/dispositivos: color-scheme: only light, background/color forçados com !important em html/body, inherit aplicado em section/div/header/footer, reforço no body. Solução robusta testada para Android e outros dispositivos móveis."
+          comment: "Implementada solução cirúrgica para dark mode: apenas color-scheme: only light e color: #111111 !important sem sobrescrever backgrounds. Preserva gradientes rosa originais e cores elegantes do site, apenas impede que navegador force dark mode automático."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
