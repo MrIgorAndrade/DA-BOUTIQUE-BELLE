@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAutoplayPaused, setIsAutoplayPaused] = useState(false);
 
   // Imagens do carrossel
   const carouselImages = [
@@ -16,6 +17,24 @@ const App = () => {
     { src: 'https://i.ibb.co/pjYBgzZd/77.png', alt: 'Produto de Beleza 7' },
     { src: 'https://i.ibb.co/4ZKcxcz0/88.png', alt: 'Produto de Beleza 8' }
   ];
+
+  // Autoplay functionality
+  useEffect(() => {
+    if (!isAutoplayPaused) {
+      const interval = setInterval(() => {
+        setCurrentSlide(prevSlide => 
+          prevSlide === carouselImages.length - 1 ? 0 : prevSlide + 1
+        );
+      }, 4000); // 4 segundos
+
+      return () => clearInterval(interval);
+    }
+  }, [isAutoplayPaused, carouselImages.length]);
+
+  // Função para navegação manual
+  const handleSlideChange = (newSlide) => {
+    setCurrentSlide(newSlide);
+  };
 
   const products = [
     {
