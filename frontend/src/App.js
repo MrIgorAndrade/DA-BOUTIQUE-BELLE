@@ -227,9 +227,9 @@ const App = () => {
               onMouseEnter={() => setIsAutoplayPaused(true)}
               onMouseLeave={() => setIsAutoplayPaused(false)}
             >
-              {/* Mobile: aspect-[4/5] */}
+              {/* Mobile: aspect-[4/4] (quadrado) */}
               <div className="block md:hidden">
-                <div className="w-full aspect-[4/5] overflow-hidden">
+                <div className="w-full aspect-[4/4] overflow-hidden">
                   <img 
                     src={carouselImages[currentSlide].src}
                     alt={carouselImages[currentSlide].alt}
