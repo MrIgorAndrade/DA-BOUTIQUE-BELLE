@@ -325,9 +325,9 @@ function updateCarousel() {
     // Update thumbnail states
     thumbnails.forEach((thumbnail, index) => {
         if (index === currentSlide) {
-            thumbnail.className = 'flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ring-2 ring-rose-500 opacity-100';
+            thumbnail.className = 'flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ring-2 ring-rose-500 opacity-100 scale-105';
         } else {
-            thumbnail.className = 'flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 opacity-60 hover:opacity-80';
+            thumbnail.className = 'flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 opacity-70 hover:opacity-90 hover:scale-105';
         }
     });
 }
