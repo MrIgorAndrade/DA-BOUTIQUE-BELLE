@@ -1,26 +1,13 @@
-/* Força o navegador a não usar dark mode automático */
+/* Força o navegador a não aplicar dark mode automático */
 :root {
   color-scheme: only light;
 }
 
-/* Neutraliza ajustes automáticos quando o usuário está no dark mode */
+/* Opcional, neutraliza dark mode sem mexer no fundo original */
 @media (prefers-color-scheme: dark) {
   html, body {
-    background: #ffffff !important;
-    color: #111111 !important;
+    color: #111111 !important; /* Garante texto escuro legível */
   }
-
-  /* Corrige áreas com gradiente claro */
-  section, div, header, footer {
-    background: inherit !important;
-    color: inherit !important;
-  }
-}
-
-/* Se quiser, reforça o fundo principal */
-body {
-  background: #ffffff;
-  color: #111111;
 }
 
 /* Custom scrollbar */
