@@ -119,6 +119,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Corrigidos espaços em branco nas laterais do carrossel. Alterado de object-contain para object-cover, removido container flex, imagem agora preenche 100% do container sem espaços vazios. Botões de navegação posicionados sobre a imagem com z-index adequado."
+        - working: true
+          agent: "main"
+          comment: "Implementada solução híbrida responsiva: Mobile usa object-contain (primeira configuração perfeita) e Desktop usa aspect-square com object-cover (formato quadrado). Cada tamanho de tela tem comportamento otimizado independente."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
