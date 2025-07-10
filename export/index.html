@@ -90,13 +90,31 @@
                 <div class="max-w-5xl mx-auto px-4">
                     <!-- Imagem Principal -->
                     <div class="relative rounded-3xl shadow-2xl overflow-hidden mb-4">
-                        <img 
-                            id="carousel-main-image"
-                            src="https://i.ibb.co/CK1FRF4N/11.png"
-                            alt="Produto de Beleza 1"
-                            class="w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] object-cover transition-all duration-500 ease-out"
-                            loading="lazy"
-                        />
+                        <!-- Mobile: aspect ratio original com object-contain -->
+                        <div class="block md:hidden">
+                            <div class="w-full h-64 sm:h-80 bg-gray-50 flex items-center justify-center">
+                                <img 
+                                    id="carousel-main-image-mobile"
+                                    src="https://i.ibb.co/CK1FRF4N/11.png"
+                                    alt="Produto de Beleza 1"
+                                    class="max-w-full max-h-full object-contain transition-all duration-500 ease-out"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
+                        
+                        <!-- Desktop: aspect ratio quadrado com object-cover -->
+                        <div class="hidden md:block">
+                            <div class="w-full aspect-square bg-gray-50 flex items-center justify-center">
+                                <img 
+                                    id="carousel-main-image-desktop"
+                                    src="https://i.ibb.co/CK1FRF4N/11.png"
+                                    alt="Produto de Beleza 1"
+                                    class="w-full h-full object-cover transition-all duration-500 ease-out"
+                                    loading="lazy"
+                                />
+                            </div>
+                        </div>
                         
                         <!-- Botões de Navegação -->
                         <button
