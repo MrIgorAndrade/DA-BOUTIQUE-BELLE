@@ -11,6 +11,8 @@ const carouselImages = [
 ];
 
 let currentSlide = 0;
+let autoplayInterval;
+let isAutoplayPaused = false;
 
 // Product data
 const products = [
