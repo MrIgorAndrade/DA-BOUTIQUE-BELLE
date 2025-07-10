@@ -3,6 +3,19 @@ import './App.css';
 
 const App = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Imagens do carrossel
+  const carouselImages = [
+    { src: 'https://i.ibb.co/CK1FRF4N/11.png', alt: 'Produto de Beleza 1' },
+    { src: 'https://i.ibb.co/JFKtNrY8/22.png', alt: 'Produto de Beleza 2' },
+    { src: 'https://i.ibb.co/rfLw6X9B/33.png', alt: 'Produto de Beleza 3' },
+    { src: 'https://i.ibb.co/svwbDvSM/44.png', alt: 'Produto de Beleza 4' },
+    { src: 'https://i.ibb.co/VcHBPC8D/55.png', alt: 'Produto de Beleza 5' },
+    { src: 'https://i.ibb.co/4Cj2JPV/66.png', alt: 'Produto de Beleza 6' },
+    { src: 'https://i.ibb.co/pjYBgzZd/77.png', alt: 'Produto de Beleza 7' },
+    { src: 'https://i.ibb.co/4ZKcxcz0/88.png', alt: 'Produto de Beleza 8' }
+  ];
 
   const products = [
     {
