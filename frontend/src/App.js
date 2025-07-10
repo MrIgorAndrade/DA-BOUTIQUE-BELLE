@@ -201,12 +201,12 @@ const App = () => {
         
         {/* Carrossel de Imagens */}
         <div className="mt-16 relative">
-          <div className="max-w-5xl mx-auto px-4">
+          <div className="max-w-3xl mx-auto px-4">
             {/* Imagem Principal */}
             <div className="relative rounded-3xl shadow-2xl overflow-hidden mb-4">
-              {/* Mobile: aspect ratio original com object-contain */}
+              {/* Mobile: aspect ratio original com object-contain - reduzido */}
               <div className="block md:hidden">
-                <div className="w-full h-64 sm:h-80 bg-gray-50 flex items-center justify-center">
+                <div className="w-full h-48 sm:h-56 bg-gray-50 flex items-center justify-center">
                   <img 
                     src={carouselImages[currentSlide].src}
                     alt={carouselImages[currentSlide].alt}
@@ -215,9 +215,9 @@ const App = () => {
                 </div>
               </div>
               
-              {/* Desktop: aspect ratio quadrado com object-cover */}
+              {/* Desktop: largura máxima de 70% e altura proporcional */}
               <div className="hidden md:block">
-                <div className="w-full aspect-square bg-gray-50 flex items-center justify-center">
+                <div className="w-full max-w-[70%] mx-auto bg-gray-50 flex items-center justify-center" style={{aspectRatio: '1/1'}}>
                   <img 
                     src={carouselImages[currentSlide].src}
                     alt={carouselImages[currentSlide].alt}
@@ -229,18 +229,18 @@ const App = () => {
               {/* Botões de Navegação */}
               <button
                 onClick={() => setCurrentSlide(currentSlide === 0 ? carouselImages.length - 1 : currentSlide - 1)}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-300 z-10"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-10"
               >
-                <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </button>
               
               <button
                 onClick={() => setCurrentSlide(currentSlide === carouselImages.length - 1 ? 0 : currentSlide + 1)}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-300 z-10"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-10"
               >
-                <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -258,7 +258,7 @@ const App = () => {
                       : 'opacity-70 hover:opacity-90 hover:scale-105'
                   }`}
                 >
-                  <div className="w-16 h-12 md:w-20 md:h-14 bg-gray-50 flex items-center justify-center">
+                  <div className="w-14 h-10 md:w-16 md:h-12 bg-gray-50 flex items-center justify-center">
                     <img
                       src={image.src}
                       alt={image.alt}
