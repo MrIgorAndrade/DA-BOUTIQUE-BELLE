@@ -125,6 +125,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Reduzido tamanho do carrossel em aproximadamente 30%. Container alterado de max-w-5xl para max-w-3xl, desktop com max-width 70%, mobile reduzido de h-64/h-80 para h-48/h-56, miniaturas reduzidas, botões menores. Proporções mantidas e carrossel centralizado."
+        - working: true
+          agent: "main"
+          comment: "Implementado autoplay no carrossel com intervalo de 4 segundos, loop infinito, pause on hover no desktop, navegação manual funcional sem interromper autoplay, transições suaves de 700ms, indicadores visuais (dots) adicionais e compatibilidade total com React e versão estática."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
