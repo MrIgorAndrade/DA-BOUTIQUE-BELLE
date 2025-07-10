@@ -222,14 +222,18 @@ const App = () => {
         <div className="mt-16 relative">
           <div className="max-w-3xl mx-auto px-4">
             {/* Imagem Principal */}
-            <div className="relative rounded-3xl shadow-2xl overflow-hidden mb-4">
+            <div 
+              className="relative rounded-3xl shadow-2xl overflow-hidden mb-4"
+              onMouseEnter={() => setIsAutoplayPaused(true)}
+              onMouseLeave={() => setIsAutoplayPaused(false)}
+            >
               {/* Mobile: aspect ratio original com object-contain - reduzido */}
               <div className="block md:hidden">
                 <div className="w-full h-48 sm:h-56 bg-gray-50 flex items-center justify-center">
                   <img 
                     src={carouselImages[currentSlide].src}
                     alt={carouselImages[currentSlide].alt}
-                    className="max-w-full max-h-full object-contain transition-all duration-500 ease-out"
+                    className="max-w-full max-h-full object-contain transition-all duration-700 ease-in-out"
                   />
                 </div>
               </div>
@@ -240,14 +244,14 @@ const App = () => {
                   <img 
                     src={carouselImages[currentSlide].src}
                     alt={carouselImages[currentSlide].alt}
-                    className="w-full h-full object-cover transition-all duration-500 ease-out"
+                    className="w-full h-full object-cover transition-all duration-700 ease-in-out"
                   />
                 </div>
               </div>
               
               {/* Botões de Navegação */}
               <button
-                onClick={() => setCurrentSlide(currentSlide === 0 ? carouselImages.length - 1 : currentSlide - 1)}
+                onClick={() => handleSlideChange(currentSlide === 0 ? carouselImages.length - 1 : currentSlide - 1)}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-10"
               >
                 <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -256,13 +260,28 @@ const App = () => {
               </button>
               
               <button
-                onClick={() => setCurrentSlide(currentSlide === carouselImages.length - 1 ? 0 : currentSlide + 1)}
+                onClick={() => handleSlideChange(currentSlide === carouselImages.length - 1 ? 0 : currentSlide + 1)}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-10"
               >
                 <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </button>
+
+              {/* Indicador de autoplay */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                {carouselImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handleSlideChange(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      currentSlide === index 
+                        ? 'bg-white' 
+                        : 'bg-white/50 hover:bg-white/70'
+                    }`}
+                  />
+                ))}
+              </div>
             </div>
             
             {/* Miniaturas */}
@@ -270,7 +289,7 @@ const App = () => {
               {carouselImages.map((image, index) => (
                 <button
                   key={index}
-                  onClick={() => setCurrentSlide(index)}
+                  onClick={() => handleSlideChange(index)}
                   className={`flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ${
                     currentSlide === index 
                       ? 'ring-2 ring-rose-500 opacity-100 scale-105' 
