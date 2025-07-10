@@ -122,6 +122,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Implementada solução híbrida responsiva: Mobile usa object-contain (primeira configuração perfeita) e Desktop usa aspect-square com object-cover (formato quadrado). Cada tamanho de tela tem comportamento otimizado independente."
+        - working: true
+          agent: "main"
+          comment: "Reduzido tamanho do carrossel em aproximadamente 30%. Container alterado de max-w-5xl para max-w-3xl, desktop com max-width 70%, mobile reduzido de h-64/h-80 para h-48/h-56, miniaturas reduzidas, botões menores. Proporções mantidas e carrossel centralizado."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
