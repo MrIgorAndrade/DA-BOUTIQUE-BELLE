@@ -286,9 +286,13 @@ function initializeCarousel() {
     carouselImages.forEach((image, index) => {
         const thumbnail = document.createElement('button');
         thumbnail.className = `flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ${
-            index === 0 ? 'ring-2 ring-rose-500 opacity-100' : 'opacity-60 hover:opacity-80'
+            index === 0 ? 'ring-2 ring-rose-500 opacity-100 scale-105' : 'opacity-70 hover:opacity-90 hover:scale-105'
         }`;
-        thumbnail.innerHTML = `<img src="${image.src}" alt="${image.alt}" class="w-16 h-12 object-cover" />`;
+        thumbnail.innerHTML = `
+            <div class="w-16 h-12 md:w-20 md:h-14 bg-gray-50 flex items-center justify-center">
+                <img src="${image.src}" alt="${image.alt}" class="max-w-full max-h-full object-contain" />
+            </div>
+        `;
         thumbnail.addEventListener('click', () => changeSlide(index));
         thumbnailsContainer.appendChild(thumbnail);
     });
