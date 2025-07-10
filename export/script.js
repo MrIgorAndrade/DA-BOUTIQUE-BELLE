@@ -294,8 +294,8 @@ function initializeCarousel() {
             index === 0 ? 'ring-2 ring-rose-500 opacity-100 scale-105' : 'opacity-70 hover:opacity-90 hover:scale-105'
         }`;
         thumbnail.innerHTML = `
-            <div class="w-14 h-10 md:w-16 md:h-12 bg-gray-50 flex items-center justify-center">
-                <img src="${image.src}" alt="${image.alt}" class="max-w-full max-h-full object-contain" />
+            <div class="w-14 h-10 md:w-16 md:h-12 overflow-hidden rounded-lg">
+                <img src="${image.src}" alt="${image.alt}" class="w-full h-full object-cover" />
             </div>
         `;
         thumbnail.addEventListener('click', () => changeSlide(index));
