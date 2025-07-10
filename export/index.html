@@ -87,12 +87,12 @@
             
             <!-- Carrossel de Imagens -->
             <div class="mt-16 relative">
-                <div class="max-w-5xl mx-auto px-4">
+                <div class="max-w-3xl mx-auto px-4">
                     <!-- Imagem Principal -->
                     <div class="relative rounded-3xl shadow-2xl overflow-hidden mb-4">
-                        <!-- Mobile: aspect ratio original com object-contain -->
+                        <!-- Mobile: aspect ratio original com object-contain - reduzido -->
                         <div class="block md:hidden">
-                            <div class="w-full h-64 sm:h-80 bg-gray-50 flex items-center justify-center">
+                            <div class="w-full h-48 sm:h-56 bg-gray-50 flex items-center justify-center">
                                 <img 
                                     id="carousel-main-image-mobile"
                                     src="https://i.ibb.co/CK1FRF4N/11.png"
@@ -103,9 +103,9 @@
                             </div>
                         </div>
                         
-                        <!-- Desktop: aspect ratio quadrado com object-cover -->
+                        <!-- Desktop: largura máxima de 70% e altura proporcional -->
                         <div class="hidden md:block">
-                            <div class="w-full aspect-square bg-gray-50 flex items-center justify-center">
+                            <div class="w-full max-w-[70%] mx-auto bg-gray-50 flex items-center justify-center" style="aspect-ratio: 1/1;">
                                 <img 
                                     id="carousel-main-image-desktop"
                                     src="https://i.ibb.co/CK1FRF4N/11.png"
@@ -119,18 +119,18 @@
                         <!-- Botões de Navegação -->
                         <button
                             id="carousel-prev"
-                            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-300 z-10"
+                            class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-10"
                         >
-                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                             </svg>
                         </button>
                         
                         <button
                             id="carousel-next"
-                            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg transition-all duration-300 z-10"
+                            class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-2 md:p-3 shadow-lg transition-all duration-300 z-10"
                         >
-                            <svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                         </button>
