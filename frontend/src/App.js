@@ -204,11 +204,27 @@ const App = () => {
           <div className="max-w-5xl mx-auto px-4">
             {/* Imagem Principal */}
             <div className="relative rounded-3xl shadow-2xl overflow-hidden mb-4">
-              <img 
-                src={carouselImages[currentSlide].src}
-                alt={carouselImages[currentSlide].alt}
-                className="w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] object-cover transition-all duration-500 ease-out"
-              />
+              {/* Mobile: aspect ratio original com object-contain */}
+              <div className="block md:hidden">
+                <div className="w-full h-64 sm:h-80 bg-gray-50 flex items-center justify-center">
+                  <img 
+                    src={carouselImages[currentSlide].src}
+                    alt={carouselImages[currentSlide].alt}
+                    className="max-w-full max-h-full object-contain transition-all duration-500 ease-out"
+                  />
+                </div>
+              </div>
+              
+              {/* Desktop: aspect ratio quadrado com object-cover */}
+              <div className="hidden md:block">
+                <div className="w-full aspect-square bg-gray-50 flex items-center justify-center">
+                  <img 
+                    src={carouselImages[currentSlide].src}
+                    alt={carouselImages[currentSlide].alt}
+                    className="w-full h-full object-cover transition-all duration-500 ease-out"
+                  />
+                </div>
+              </div>
               
               {/* Botões de Navegação */}
               <button
@@ -242,11 +258,13 @@ const App = () => {
                       : 'opacity-70 hover:opacity-90 hover:scale-105'
                   }`}
                 >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="w-16 h-12 md:w-20 md:h-14 object-cover"
-                  />
+                  <div className="w-16 h-12 md:w-20 md:h-14 bg-gray-50 flex items-center justify-center">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
                 </button>
               ))}
             </div>
