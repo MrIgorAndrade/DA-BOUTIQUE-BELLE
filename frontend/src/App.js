@@ -203,14 +203,12 @@ const App = () => {
         <div className="mt-16 relative">
           <div className="max-w-5xl mx-auto px-4">
             {/* Imagem Principal */}
-            <div className="relative rounded-3xl shadow-2xl overflow-hidden mb-4 bg-gray-50">
-              <div className="w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] flex items-center justify-center">
-                <img 
-                  src={carouselImages[currentSlide].src}
-                  alt={carouselImages[currentSlide].alt}
-                  className="max-w-full max-h-full object-contain transition-all duration-500 ease-out"
-                />
-              </div>
+            <div className="relative rounded-3xl shadow-2xl overflow-hidden mb-4">
+              <img 
+                src={carouselImages[currentSlide].src}
+                alt={carouselImages[currentSlide].alt}
+                className="w-full h-64 sm:h-80 md:h-96 lg:h-[28rem] object-cover transition-all duration-500 ease-out"
+              />
               
               {/* Botões de Navegação */}
               <button
@@ -244,13 +242,11 @@ const App = () => {
                       : 'opacity-70 hover:opacity-90 hover:scale-105'
                   }`}
                 >
-                  <div className="w-16 h-12 md:w-20 md:h-14 bg-gray-50 flex items-center justify-center">
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="max-w-full max-h-full object-contain"
-                    />
-                  </div>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-16 h-12 md:w-20 md:h-14 object-cover"
+                  />
                 </button>
               ))}
             </div>
