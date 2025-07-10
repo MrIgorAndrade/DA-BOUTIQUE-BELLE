@@ -278,7 +278,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Carousel Functions
 function initializeCarousel() {
     const thumbnailsContainer = document.getElementById('carousel-thumbnails');
-    const mainImage = document.getElementById('carousel-main-image');
+    const mainImageMobile = document.getElementById('carousel-main-image-mobile');
+    const mainImageDesktop = document.getElementById('carousel-main-image-desktop');
     const prevBtn = document.getElementById('carousel-prev');
     const nextBtn = document.getElementById('carousel-next');
     
@@ -288,7 +289,11 @@ function initializeCarousel() {
         thumbnail.className = `flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ${
             index === 0 ? 'ring-2 ring-rose-500 opacity-100 scale-105' : 'opacity-70 hover:opacity-90 hover:scale-105'
         }`;
-        thumbnail.innerHTML = `<img src="${image.src}" alt="${image.alt}" class="w-16 h-12 md:w-20 md:h-14 object-cover" />`;
+        thumbnail.innerHTML = `
+            <div class="w-16 h-12 md:w-20 md:h-14 bg-gray-50 flex items-center justify-center">
+                <img src="${image.src}" alt="${image.alt}" class="max-w-full max-h-full object-contain" />
+            </div>
+        `;
         thumbnail.addEventListener('click', () => changeSlide(index));
         thumbnailsContainer.appendChild(thumbnail);
     });
@@ -311,12 +316,20 @@ function changeSlide(index) {
 }
 
 function updateCarousel() {
-    const mainImage = document.getElementById('carousel-main-image');
+    const mainImageMobile = document.getElementById('carousel-main-image-mobile');
+    const mainImageDesktop = document.getElementById('carousel-main-image-desktop');
     const thumbnails = document.querySelectorAll('#carousel-thumbnails button');
     
-    // Update main image
-    mainImage.src = carouselImages[currentSlide].src;
-    mainImage.alt = carouselImages[currentSlide].alt;
+    // Update both main images
+    if (mainImageMobile) {
+        mainImageMobile.src = carouselImages[currentSlide].src;
+        mainImageMobile.alt = carouselImages[currentSlide].alt;
+    }
+    
+    if (mainImageDesktop) {
+        mainImageDesktop.src = carouselImages[currentSlide].src;
+        mainImageDesktop.alt = carouselImages[currentSlide].alt;
+    }
     
     // Update thumbnail states
     thumbnails.forEach((thumbnail, index) => {
