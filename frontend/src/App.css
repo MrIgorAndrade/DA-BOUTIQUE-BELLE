@@ -1,29 +1,13 @@
-/* Força o site a usar sempre o modo claro */
+/* Força o site a ignorar o tema escuro mantendo cores originais */
 :root {
   color-scheme: only light;
-  background-color: #ffffff; /* Fundo branco */
-  color: #000000;            /* Texto preto (ou ajuste conforme sua paleta) */
 }
 
 /* Neutraliza tentativas de aplicar dark mode */
 @media (prefers-color-scheme: dark) {
-  body,
-  html {
-    background-color: #ffffff !important;
-    color: #000000 !important;
+  * {
+    color-scheme: light !important;
   }
-}
-
-/* Opcional: ajuste elementos que possam ter cores automáticas */
-body {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Se houver cabeçalhos, rodapés ou containers com cores herdadas, force também */
-header, footer, section, div {
-  background-color: inherit;
-  color: inherit;
 }
 
 /* Custom scrollbar */
