@@ -87,28 +87,28 @@
             
             <!-- Carrossel de Imagens -->
             <div class="mt-16 relative">
-                <div class="max-w-3xl mx-auto px-4">
+                <div class="max-w-4xl mx-auto px-4">
                     <!-- Imagem Principal -->
                     <div 
                         id="carousel-container"
                         class="relative rounded-3xl shadow-2xl overflow-hidden mb-4"
                     >
-                        <!-- Mobile: aspect ratio original com object-contain - reduzido -->
+                        <!-- Mobile: aspect-[4/5] -->
                         <div class="block md:hidden">
-                            <div class="w-full h-48 sm:h-56 bg-gray-50 flex items-center justify-center">
+                            <div class="w-full aspect-[4/5] overflow-hidden">
                                 <img 
                                     id="carousel-main-image-mobile"
                                     src="https://i.ibb.co/CK1FRF4N/11.png"
                                     alt="Produto de Beleza 1"
-                                    class="max-w-full max-h-full object-contain transition-all duration-700 ease-in-out"
+                                    class="w-full h-full object-cover transition-all duration-700 ease-in-out"
                                     loading="lazy"
                                 />
                             </div>
                         </div>
                         
-                        <!-- Desktop: largura máxima de 70% e altura proporcional -->
+                        <!-- Desktop: aspect-video (16/9) -->
                         <div class="hidden md:block">
-                            <div class="w-full max-w-[70%] mx-auto bg-gray-50 flex items-center justify-center" style="aspect-ratio: 1/1;">
+                            <div class="w-full aspect-video overflow-hidden">
                                 <img 
                                     id="carousel-main-image-desktop"
                                     src="https://i.ibb.co/CK1FRF4N/11.png"
