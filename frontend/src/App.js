@@ -199,14 +199,57 @@ const App = () => {
           </div>
         </div>
         
-        {/* Hero Image */}
+        {/* Carrossel de Imagens */}
         <div className="mt-16 relative">
           <div className="max-w-4xl mx-auto px-4">
-            <img 
-              src="https://images.unsplash.com/photo-1531646317777-0619c7c5d1d3" 
-              alt="Beauty Products"
-              className="w-full h-96 object-cover rounded-3xl shadow-2xl"
-            />
+            {/* Imagem Principal */}
+            <div className="relative rounded-3xl shadow-2xl overflow-hidden mb-4">
+              <img 
+                src={carouselImages[currentSlide].src}
+                alt={carouselImages[currentSlide].alt}
+                className="w-full h-96 object-cover transition-all duration-500 ease-out"
+              />
+              
+              {/* Botões de Navegação */}
+              <button
+                onClick={() => setCurrentSlide(currentSlide === 0 ? carouselImages.length - 1 : currentSlide - 1)}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg transition-all duration-300"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              
+              <button
+                onClick={() => setCurrentSlide(currentSlide === carouselImages.length - 1 ? 0 : currentSlide + 1)}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full p-2 shadow-lg transition-all duration-300"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Miniaturas */}
+            <div className="flex justify-center space-x-2 overflow-x-auto pb-2">
+              {carouselImages.map((image, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentSlide(index)}
+                  className={`flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ${
+                    currentSlide === index 
+                      ? 'ring-2 ring-rose-500 opacity-100' 
+                      : 'opacity-60 hover:opacity-80'
+                  }`}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-16 h-12 object-cover"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       </section>
