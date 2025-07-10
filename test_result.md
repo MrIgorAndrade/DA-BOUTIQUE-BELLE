@@ -116,6 +116,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Substituída a imagem estática da hero section por um carrossel responsivo com 8 imagens dos produtos. Implementado com navegação por setas, miniaturas clicáveis, transições suaves (450ms ease-out), altura de 400px e design responsivo. Funcional tanto no React App quanto na versão estática."
+        - working: true
+          agent: "main"
+          comment: "Corrigidos espaços em branco nas laterais do carrossel. Alterado de object-contain para object-cover, removido container flex, imagem agora preenche 100% do container sem espaços vazios. Botões de navegação posicionados sobre a imagem com z-index adequado."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
