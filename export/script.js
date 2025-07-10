@@ -224,6 +224,9 @@ document.addEventListener('DOMContentLoaded', function() {
         productsCountElement.textContent = products.length;
     }
     
+    // Initialize carousel
+    initializeCarousel();
+    
     // Render category buttons
     const categoryContainer = document.getElementById('category-container');
     categories.forEach(category => {
@@ -271,3 +274,56 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+// Carousel Functions
+function initializeCarousel() {
+    const thumbnailsContainer = document.getElementById('carousel-thumbnails');
+    const mainImage = document.getElementById('carousel-main-image');
+    const prevBtn = document.getElementById('carousel-prev');
+    const nextBtn = document.getElementById('carousel-next');
+    
+    // Generate thumbnails
+    carouselImages.forEach((image, index) => {
+        const thumbnail = document.createElement('button');
+        thumbnail.className = `flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ${
+            index === 0 ? 'ring-2 ring-rose-500 opacity-100' : 'opacity-60 hover:opacity-80'
+        }`;
+        thumbnail.innerHTML = `<img src="${image.src}" alt="${image.alt}" class="w-16 h-12 object-cover" />`;
+        thumbnail.addEventListener('click', () => changeSlide(index));
+        thumbnailsContainer.appendChild(thumbnail);
+    });
+    
+    // Navigation buttons
+    prevBtn.addEventListener('click', () => {
+        currentSlide = currentSlide === 0 ? carouselImages.length - 1 : currentSlide - 1;
+        updateCarousel();
+    });
+    
+    nextBtn.addEventListener('click', () => {
+        currentSlide = currentSlide === carouselImages.length - 1 ? 0 : currentSlide + 1;
+        updateCarousel();
+    });
+}
+
+function changeSlide(index) {
+    currentSlide = index;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const mainImage = document.getElementById('carousel-main-image');
+    const thumbnails = document.querySelectorAll('#carousel-thumbnails button');
+    
+    // Update main image
+    mainImage.src = carouselImages[currentSlide].src;
+    mainImage.alt = carouselImages[currentSlide].alt;
+    
+    // Update thumbnail states
+    thumbnails.forEach((thumbnail, index) => {
+        if (index === currentSlide) {
+            thumbnail.className = 'flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 ring-2 ring-rose-500 opacity-100';
+        } else {
+            thumbnail.className = 'flex-shrink-0 rounded-lg overflow-hidden transition-all duration-300 opacity-60 hover:opacity-80';
+        }
+    });
+}
