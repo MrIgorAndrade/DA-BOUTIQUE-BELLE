@@ -5,6 +5,7 @@ const App = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoplayPaused, setIsAutoplayPaused] = useState(false);
+  const [openBenefits, setOpenBenefits] = useState(null); // Controla qual produto tem benefícios abertos
 
   // Imagens do carrossel
   const carouselImages = [
