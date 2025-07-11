@@ -10,6 +10,35 @@
   }
 }
 
+/* Força o footer a ter fundo branco mesmo no dark mode */
+.footer-white-forced {
+  background-color: white !important;
+  color: #111827 !important; /* gray-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer-white-forced {
+    background-color: white !important;
+    color: #111827 !important; /* gray-900 */
+  }
+  
+  .footer-white-forced * {
+    color: inherit !important;
+  }
+  
+  .footer-white-forced .text-gray-600 {
+    color: #4B5563 !important; /* gray-600 */
+  }
+  
+  .footer-white-forced .text-gray-900 {
+    color: #111827 !important; /* gray-900 */
+  }
+  
+  .footer-white-forced .border-gray-200 {
+    border-color: #E5E7EB !important; /* gray-200 */
+  }
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
