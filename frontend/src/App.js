@@ -46,7 +46,7 @@ const App = () => {
     {
       id: 1,
       name: 'Roza Amazônica',
-      description: 'Suplemento natural de beleza para o bem-estar dos cabelos e da pele.',
+      description: 'O segredo da juventude em um toque de luxo e hidratação.',
       categories: ['skincare'],
       image: 'https://i.ibb.co/h0yr6Zy/ROZA-AMAZONICA.png',
       buttons: [
