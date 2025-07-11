@@ -613,9 +613,9 @@ const App = () => {
             <div>
               <h5 className="text-lg font-semibold mb-4">Links Rápidos</h5>
               <ul className="space-y-2">
-                <li><a href="#home" className="text-gray-400 hover:text-rose-400 transition-colors">Início</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Produtos</a></li>
-                <li><a href="#about" className="text-gray-400 hover:text-rose-400 transition-colors">Sobre Nós</a></li>
+                <li><a href="#home" className="text-gray-600 hover:text-rose-600 transition-colors">Início</a></li>
+                <li><a href="#products" className="text-gray-600 hover:text-rose-600 transition-colors">Produtos</a></li>
+                <li><a href="#about" className="text-gray-600 hover:text-rose-600 transition-colors">Sobre Nós</a></li>
               </ul>
             </div>
             <div>
