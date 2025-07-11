@@ -473,14 +473,17 @@ const App = () => {
                     {openBenefits === product.id && (
                       <div className="benefit-content mt-4 text-sm text-gray-700 bg-rose-50 rounded-xl p-4 shadow-inner transition-all duration-300">
                         {product.benefits ? (
-                          <ul className="space-y-2">
-                            {product.benefits.map((benefit, index) => (
-                              <li key={index} className="flex items-start gap-2">
-                                <span className="text-rose-500 font-bold mt-0.5">•</span>
-                                <span>{benefit}</span>
-                              </li>
-                            ))}
-                          </ul>
+                          <div className="space-y-4">
+                            <p className="text-gray-600 leading-relaxed">{product.benefits.description}</p>
+                            <ul className="space-y-2">
+                              {product.benefits.list.map((benefit, index) => (
+                                <li key={index} className="flex items-start gap-2">
+                                  <span className="text-rose-500 font-bold mt-0.5">•</span>
+                                  <span>{benefit}</span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
                         ) : (
                           <p>Será adicionado depois.</p>
                         )}
