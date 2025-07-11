@@ -69,9 +69,21 @@ const App = () => {
     {
       id: 2,
       name: 'Rosa Xantina',
-      description: 'Fórmula revitalizante para a pele com propriedades antioxidantes.',
+      description: 'A fórmula inteligente para uma pele mais jovem, firme, iluminada e livre de manchas.',
       categories: ['skincare', 'haircare', 'supplements'],
       image: 'https://i.ibb.co/TxpwbLwS/ROSA-XANTINA.png',
+      benefits: {
+        description: 'Desperte a sua melhor versão com Rosa Xantina. Hidratação intensa com ácido hialurônico, ação antioxidante poderosa com resveratrol e astaxantina, estímulo de colágeno e suavização de manchas e olheiras. Uma fórmula inovadora que reduz linhas finas, uniformiza o tom e revela o brilho natural da sua pele. Mais firmeza, mais equilíbrio, mais beleza — do jeito que só você merece.',
+        list: [
+          'Reduz linhas finas e rugas',
+          'Hidratação profunda com ácido hialurônico',
+          'Clareia manchas e melasma',
+          'Ação antioxidante com resveratrol e astaxantina',
+          'Estimula o colágeno e melhora a elasticidade',
+          'Reduz olheiras e inchaço com vitamina K2',
+          'Proporciona brilho natural e pele uniforme'
+        ]
+      },
       buttons: [
         { url: 'https://ev.braip.com/ref?pl=plaj002g&ck=che1wmnj&af=afi8jmg66g', text: '1 Pote + 1 Grátis R$ 197,00', color: 'from-pink-500 to-rose-600' },
         { url: 'https://ev.braip.com/ref?pl=plan0010&ck=che1wmnj&af=afi8jmg66g', text: '3 Pote + 1 Grátis R$ 297,00', color: 'from-pink-500 to-rose-600' },
