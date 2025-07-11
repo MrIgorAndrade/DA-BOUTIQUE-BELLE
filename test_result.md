@@ -140,6 +140,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Adicionado botão 'Veja os Benefícios' em todos os produtos: posicionado entre descrição e botões de compra, design branco com borda rosa e seta animada, funcionalidade expansível com 'Será adicionado depois', apenas um benefício aberto por vez, implementado tanto no React quanto na versão estática."
+        - working: true
+          agent: "main"
+          comment: "Atualizado produto Roza Amazônica: nova descrição 'O segredo da juventude em um toque de luxo e hidratação', adicionados 5 benefícios específicos (lifting instantâneo, hidratação com ácido hialurônico, renovação celular, ação antioxidante, Rosa Mosqueta), sistema de benefícios dinâmico implementado."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
