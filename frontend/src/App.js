@@ -120,9 +120,22 @@ const App = () => {
     {
       id: 4,
       name: 'Kit S.O.S',
-      description: 'Kit completo de cuidados para recuperação e hidratação da pele.',
+      description: 'Ação intensiva no combate à queda e crescimento acelerado dos fios — resultados visíveis desde a primeira aplicação.',
       categories: ['haircare'],
       image: 'https://i.ibb.co/99SQwYXM/KIT-SOS-PNG.png',
+      benefits: {
+        description: 'Dê um basta na queda capilar e redescubra o poder do seu cabelo com o Kit S.O.S Crescimento. Com fórmula exclusiva e alta concentração de ativos como Biotina, Extrato de Café, Bardana, Óleo de Rícino e Pantenol, ele age diretamente no bulbo capilar, fortalecendo os fios desde a raiz, preenchendo falhas e estimulando um crescimento até 7x mais rápido. Trata alopecia, combate a calvície e devolve a saúde, o brilho e a espessura dos cabelos — tudo isso sem sal, parabenos ou agressões químicas. É potência, leveza e resultado — em um tratamento completo aprovado pela ANVISA.',
+        list: [
+          'Paralisa até 95% da queda capilar',
+          'Estimula o crescimento até 7x mais rápido',
+          'Preenche falhas e combate a calvície e alopecia',
+          'Alta concentração de 7 ativos naturais',
+          'Hidrata, fortalece e nutre desde a raiz',
+          'Livre de sal, petrolatos e parabenos',
+          'Compatível com qualquer química e tipo de cabelo',
+          'Testado e aprovado pela ANVISA'
+        ]
+      },
       buttons: [
         { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=LB274419', text: '3 Tônico, 2 Máscara, 2 Shampoo, 1 Óleo de Argan, 1 Condicionador 2em1 R$ 299,00', color: 'from-amber-500 to-yellow-600' },
         { url: 'https://app.monetizze.com.br/r/ARU25256290?u=c&pl=JE132223', text: '1 Kit SOS Crescimento R$ 179,00', color: 'from-amber-500 to-yellow-600' },
