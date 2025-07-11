@@ -137,6 +137,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Implementada solução cirúrgica para dark mode: apenas color-scheme: only light e color: #111111 !important sem sobrescrever backgrounds. Preserva gradientes rosa originais e cores elegantes do site, apenas impede que navegador force dark mode automático."
+        - working: true
+          agent: "main"
+          comment: "Adicionado botão 'Veja os Benefícios' em todos os produtos: posicionado entre descrição e botões de compra, design branco com borda rosa e seta animada, funcionalidade expansível com 'Será adicionado depois', apenas um benefício aberto por vez, implementado tanto no React quanto na versão estática."
 
   - task: "Atualização da Imagem Rosa Xantina"
     implemented: true
