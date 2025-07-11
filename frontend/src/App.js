@@ -383,7 +383,18 @@ const App = () => {
                     {/* Conteúdo expansível */}
                     {openBenefits === product.id && (
                       <div className="benefit-content mt-4 text-sm text-gray-700 bg-rose-50 rounded-xl p-4 shadow-inner transition-all duration-300">
-                        Será adicionado depois.
+                        {product.benefits ? (
+                          <ul className="space-y-2">
+                            {product.benefits.map((benefit, index) => (
+                              <li key={index} className="flex items-start gap-2">
+                                <span className="text-rose-500 font-bold mt-0.5">•</span>
+                                <span>{benefit}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p>Será adicionado depois.</p>
+                        )}
                       </div>
                     )}
                   </div>
