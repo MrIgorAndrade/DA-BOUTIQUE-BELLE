@@ -196,7 +196,15 @@ function renderProducts(productsToRender) {
 
                     <!-- Conteúdo expansível -->
                     <div class="benefit-content hidden transition-all duration-300 text-sm text-gray-700 bg-rose-50 rounded-xl p-4 shadow-inner mt-4">
-                        Será adicionado depois.
+                        ${product.benefits ? 
+                            product.benefits.map(benefit => 
+                                `<div class="flex items-start gap-2 mb-2">
+                                    <span class="text-rose-500 font-bold mt-0.5">•</span>
+                                    <span>${benefit}</span>
+                                </div>`
+                            ).join('') 
+                            : 'Será adicionado depois.'
+                        }
                     </div>
                 </div>
                 
