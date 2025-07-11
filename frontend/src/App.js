@@ -199,9 +199,21 @@ const App = () => {
     {
       id: 7,
       name: 'Brain Hacker',
-      description: 'Suplemento para melhora cognitiva com ingredientes naturais.',
+      description: 'Potência cerebral máxima com foco, energia, memória e desempenho mental até 7 vezes mais acelerado.',
       categories: ['supplements'],
       image: 'https://i.ibb.co/cKnGD8CC/BRAIN-HACKER-PNG.png',
+      benefits: {
+        description: 'Eleve sua mente ao próximo nível com BrainHacker. Desenvolvido por especialistas e biohackers, sua fórmula combina ativos como Taurina, Cafeína, Tirosina, Colina e Vitaminas B1 e B6 para estimular o foco, aumentar a concentração, turbinar a memória e promover energia mental de alta performance. Ideal para quem busca produtividade, clareza mental e desempenho superior, BrainHacker é o upgrade que sua mente merece — com resultados que você sente no corpo e na vida.',
+        list: [
+          'Aumenta foco, energia e clareza mental',
+          'Melhora memória, cognição e raciocínio',
+          'Reduz estresse e estimula produtividade',
+          'Potencializa sinapses e rejuvenescimento neurológico',
+          'Fórmula com Taurina, Cafeína, Tirosina, Colina e Vitaminas B',
+          'Ideal para empreendedores, estudantes, gamers e profissionais de alta performance',
+          'Acelera o desempenho cerebral em até 7x'
+        ]
+      },
       buttons: [
         { url: 'https://pv.b4you.com.br/api/product/c/UiHrvk5ZIm/eIHBsTFV1o', text: 'BrainHacker + 1Mind + 1Focus R$157,90', color: 'from-cyan-600 to-blue-700' }
       ],
