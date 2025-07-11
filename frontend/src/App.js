@@ -594,7 +594,7 @@ const App = () => {
                 height="27"
                 className="mb-4"
               />
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 Sua parceira de confiança em beleza e bem-estar. Descubra o poder dos ingredientes naturais e formulações premium.
               </p>
               <div className="flex space-x-4">
