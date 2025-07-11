@@ -405,3 +405,31 @@ function updateCarousel() {
         }
     });
 }
+
+// Função para controlar benefícios (apenas um aberto por vez)
+function toggleBenefits(clickedButton) {
+    // Fechar todos os blocos primeiro
+    document.querySelectorAll('.benefit-container').forEach(container => {
+        const content = container.querySelector('.benefit-content');
+        const button = container.querySelector('button');
+        content.classList.add('hidden');
+        button.classList.remove('open');
+        // Reset da rotação da seta
+        const arrow = button.querySelector('svg');
+        arrow.style.transform = 'rotate(0deg)';
+    });
+
+    // Abrir o correspondente ao botão clicado
+    const content = clickedButton.parentElement.querySelector('.benefit-content');
+    const arrow = clickedButton.querySelector('svg');
+    
+    if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        clickedButton.classList.add('open');
+        arrow.style.transform = 'rotate(90deg)';
+    } else {
+        content.classList.add('hidden');
+        clickedButton.classList.remove('open');
+        arrow.style.transform = 'rotate(0deg)';
+    }
+}
