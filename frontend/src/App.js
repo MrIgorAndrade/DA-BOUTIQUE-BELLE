@@ -149,9 +149,21 @@ const App = () => {
     {
       id: 5,
       name: 'Hidraliso',
-      description: 'Tratamento profissional de alisamento capilar com efeito nutritivo.',
+      description: 'Fios lisos, hidratados e protegidos desde a primeira aplicação — sem formol, sem esforço, no conforto da sua casa.',
       categories: ['haircare'],
       image: 'https://i.ibb.co/PsBwfvgv/HIDRALISO.png',
+      benefits: {
+        description: 'Descubra o poder de um liso perfeito com Hidraliso. Sua fórmula sem formol, suave e sem cheiro realinha os fios já na primeira aplicação, sem desbotar ou danificar. Com ativos naturais, proporciona hidratação intensa, controle absoluto do frizz, brilho radiante e toque macio. O combo com shampoo preparatório e termo spray garante proteção térmica, prolonga o efeito liso e deixa os fios alinhados, leves e com aparência profissional — tudo isso com praticidade e segurança para todos os tipos de cabelo.',
+        list: [
+          'Liso instantâneo sem formol, ardência ou cheiro',
+          'Hidratação profunda e realinhamento desde a primeira aplicação',
+          'Compatível com qualquer química e cor de cabelo',
+          'Controle do frizz e selagem das pontas duplas',
+          'Proteção térmica com efeito prolongado',
+          'Brilho natural, elasticidade e movimento aos fios',
+          'Prático, seguro e fácil de aplicar em casa'
+        ]
+      },
       buttons: [
         { url: 'https://ev.braip.com/ref?pl=plaerpgw&ck=chev95og&af=afivpe8mmq', text: '1 Hidraliso +1 Shampoo +1 Termo R$ 168,44', color: 'from-emerald-500 to-teal-600' },
         { url: 'https://ev.braip.com/ref?pl=planlvk0&ck=chev95og&af=afivpe8mmq', text: '2 Hidraliso +1 Shampoo +1 Termo R$ 211,19', color: 'from-emerald-500 to-teal-600' },
