@@ -621,10 +621,10 @@ const App = () => {
             <div>
               <h5 className="text-lg font-semibold mb-4">Categorias</h5>
               <ul className="space-y-2">
-                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Cuidados com a Pele</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Cuidados Capilares</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Suplementos</a></li>
-                <li><a href="#products" className="text-gray-400 hover:text-rose-400 transition-colors">Bem-estar</a></li>
+                <li><a href="#products" className="text-gray-600 hover:text-rose-600 transition-colors">Cuidados com a Pele</a></li>
+                <li><a href="#products" className="text-gray-600 hover:text-rose-600 transition-colors">Cuidados Capilares</a></li>
+                <li><a href="#products" className="text-gray-600 hover:text-rose-600 transition-colors">Suplementos</a></li>
+                <li><a href="#products" className="text-gray-600 hover:text-rose-600 transition-colors">Bem-estar</a></li>
               </ul>
             </div>
           </div>
