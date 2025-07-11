@@ -37,6 +37,11 @@ const App = () => {
     setCurrentSlide(newSlide);
   };
 
+  // Função para controlar benefícios
+  const toggleBenefits = (productId) => {
+    setOpenBenefits(openBenefits === productId ? null : productId);
+  };
+
   const products = [
     {
       id: 1,
