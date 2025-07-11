@@ -94,9 +94,21 @@ const App = () => {
     {
       id: 3,
       name: 'BB4U',
-      description: 'Blend de beleza para energia, foco e brilho exterior.',
+      description: 'Beleza de dentro para fora com cabelos mais fortes, pele mais firme e unhas saudáveis — tudo em uma fórmula segura, moderna e eficaz.',
       categories: ['supplements', 'skincare', 'haircare'],
       image: 'https://i.ibb.co/4wf0QPQs/BB4U-PNG.png',
+      benefits: {
+        description: 'BB4U é o cuidado completo que realça a sua beleza natural de dentro para fora. Com Silício Orgânico Nutricolin®, Biotina, Zinco, Selênio, Cobre e um mix de vitaminas, fortalece seus cabelos desde a raiz, melhora a firmeza e a luminosidade da pele e deixa suas unhas mais resistentes e bonitas. Um tratamento seguro, inclusive para gestantes e lactantes, que promove confiança, brilho, força e juventude — em cápsulas pensadas para a mulher que quer se sentir linda todos os dias.',
+        list: [
+          'Fortalece e nutre os cabelos desde a raiz',
+          'Melhora a firmeza e o viço da pele',
+          'Estimula unhas mais fortes e crescimento saudável',
+          'Fórmula rica em Silício Orgânico, Biotina, Zinco e Vitaminas',
+          'Combate sinais do tempo e promove luminosidade natural',
+          'Previne queda capilar e surgimento de fios brancos',
+          'Seguro para gestantes e lactantes'
+        ]
+      },
       buttons: [
         { url: 'https://pv.b4you.com.br/api/product/c/0k-w9Kx9Px/4dEPHbx8Ab', text: '1 Vitamina BB4U R$ 189,90', color: 'from-purple-500 to-indigo-600' },
         { url: 'https://pv.b4you.com.br/api/product/c/7TNyQwdDxw/4dEPHbx8Ab', text: '2 Vitaminas +1 Condicionador +1 Shampoo R$ 299,90', color: 'from-purple-500 to-indigo-600' },
