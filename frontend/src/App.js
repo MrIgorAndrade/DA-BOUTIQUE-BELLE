@@ -360,6 +360,27 @@ const App = () => {
                 <div className="p-6">
                   <h4 className="text-xl font-bold text-gray-900 mb-2">{product.name}</h4>
                   <p className="text-gray-600 mb-6 leading-relaxed">{product.description}</p>
+                  
+                  {/* Botão Veja os Benefícios */}
+                  <div className="benefit-container mb-6">
+                    <button 
+                      onClick={() => toggleBenefits(product.id)}
+                      className={`w-full px-6 py-2.5 bg-white text-rose-600 font-medium rounded-full border border-rose-300 shadow-sm flex items-center justify-center gap-2 hover:bg-gradient-to-r hover:from-rose-100 hover:to-pink-100 hover:text-rose-700 hover:shadow-lg transition-all duration-300 group ${openBenefits === product.id ? 'open' : ''}`}
+                    >
+                      Veja os Benefícios
+                      <svg xmlns="http://www.w3.org/2000/svg" className={`h-4 w-4 transition-transform duration-300 ${openBenefits === product.id ? 'rotate-90' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+
+                    {/* Conteúdo expansível */}
+                    {openBenefits === product.id && (
+                      <div className="benefit-content mt-4 text-sm text-gray-700 bg-rose-50 rounded-xl p-4 shadow-inner transition-all duration-300">
+                        Será adicionado depois.
+                      </div>
+                    )}
+                  </div>
+                  
                   <div className="space-y-3">
                     {product.buttons.map((button, index) => (
                       <button
