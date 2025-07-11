@@ -19,9 +19,16 @@ const products = [
     {
         id: 1,
         name: 'Roza Amazônica',
-        description: 'Suplemento natural de beleza para o bem-estar dos cabelos e da pele.',
+        description: 'O segredo da juventude em um toque de luxo e hidratação.',
         categories: ['skincare'],
         image: 'https://i.ibb.co/h0yr6Zy/ROZA-AMAZONICA.png',
+        benefits: [
+            'Efeito lifting instantâneo que suaviza rugas e linhas de expressão',
+            'Hidratação profunda e prolongada com Ácido Hialurônico',
+            'Renovação celular diária para pele sempre jovem e firme',
+            'Combate o envelhecimento com ação antioxidante e colágeno Verisol',
+            'Clareia, regenera e nutre a pele com Rosa Mosqueta Amazônica e Retinol'
+        ],
         buttons: [
             { url: 'https://ev.braip.com/ref?pl=plamoxem&ck=chezlmgr&af=afijpxl883', text: '1 Frascos + 1 Grátis R$ 197,00', color: 'from-rose-500 to-pink-600' },
             { url: 'https://ev.braip.com/ref?pl=playxgyo&ck=chezlmgr&af=afijpxl883', text: '3 Frascos + 1 Grátis R$ 297,00', color: 'from-rose-500 to-pink-600' },
