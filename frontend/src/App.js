@@ -637,7 +637,7 @@ const App = () => {
                 className="mx-auto max-w-sm h-auto"
               />
             </div>
-            <p className="text-gray-400">
+            <p className="text-gray-600">
               © 2025 DA BOUTIQUE BELLE. Todos os direitos reservados. Feito com ❤️ para você linda.
             </p>
           </div>
