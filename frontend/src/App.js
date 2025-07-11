@@ -174,9 +174,21 @@ const App = () => {
     {
       id: 6,
       name: 'Harmony Hair',
-      description: 'Fórmula avançada para a saúde capilar que reduz a queda e promove o crescimento.',
+      description: 'Fórmula importada e poderosa para acabar com a queda, preencher falhas e fazer crescer fios novos com saúde e força.',
       categories: ['haircare', 'skincare', 'supplements'],
       image: 'https://i.ibb.co/p6tBVsFM/HARMONY-HAIR.png',
+      benefits: {
+        description: 'Viva o renascimento do seu cabelo com Harmony Hair. Sua fórmula importada combina Biotina, Ácido Pantotênico, Niacina, Retinol e minerais essenciais que atuam diretamente no fortalecimento dos fios, no crescimento de novos cabelos e no preenchimento das falhas. Com redução comprovada da queda em até 98,3%, hidrata profundamente, rejuvenesce o couro cabeludo e devolve volume, brilho e autoestima. Um tratamento completo, 100% natural e seguro, pensado especialmente para mulheres que querem recuperar a força, a beleza e a confiança — fio por fio.',
+        list: [
+          'Reduz a queda capilar em até 98,3%',
+          'Estimula o crescimento de novos fios',
+          'Preenche falhas no couro cabeludo',
+          'Fortalece cabelo e unhas com vitaminas essenciais',
+          'Hidratação intensa e ação antioxidante',
+          'Combate pontas duplas, oleosidade e enfraquecimento',
+          'Fórmula 100% natural, segura e eficaz'
+        ]
+      },
       buttons: [
         { url: 'https://ev.braip.com/ref?pl=pla7vo9n&ck=che2z0mp&af=afizjy6vvg', text: '1 Frascos + 1 Grátis R$ 197,00', color: 'from-fuchsia-600 to-pink-500' },
         { url: 'https://ev.braip.com/ref?pl=pla51qn2&ck=che2z0mp&af=afizjy6vvg', text: '2 Frascos + 2 Grátis R$ 297,00', color: 'from-fuchsia-600 to-pink-500' },
