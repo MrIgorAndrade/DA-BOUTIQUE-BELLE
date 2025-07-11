@@ -222,9 +222,22 @@ const App = () => {
     {
       id: 8,
       name: 'Cabelo, Pele & Unhas',
-      description: 'Suplemento completo para fortalecer cabelos, pele e unhas.',
+      description: 'Um único tratamento com Silício Inteligente que fortalece seus cabelos, revitaliza a pele e estimula unhas mais resistentes — tudo de dentro para fora.',
       categories: ['haircare', 'skincare', 'supplements'],
       image: 'https://i.ibb.co/F4QbKsMY/CABELO-PELE-UNHAS.png',
+      benefits: {
+        description: 'Viva a transformação completa da sua beleza com o tratamento Cabelos, Pele e Unhas. Com 1.000mg diários dos 9 ativos mais eficazes e Silício Inteligente de alta absorção, ele aumenta em até 5x a espessura dos fios, dá volume visível e reduz a queda capilar. Na pele, combate os radicais livres, melhora a firmeza e devolve a elasticidade natural. Nas unhas, fortalece e estimula o crescimento, reduzindo a quebra. Uma fórmula única e potente que age de dentro para fora, rejuvenescendo sua aparência e elevando sua autoestima — fio a fio, célula a célula.',
+        list: [
+          'Aumenta em até 5x a espessura dos fios',
+          'Sensação de até 25.000 fios a mais',
+          'Fortalece e estimula o crescimento capilar',
+          'Rejuvenesce e firma a pele, combatendo os sinais da idade',
+          'Fortalece as unhas, reduzindo a quebra',
+          'Fórmula com alta concentração de Silício Inteligente',
+          'Tratamento completo com 9 ativos essenciais',
+          'Ação de dentro para fora, com resultados visíveis'
+        ]
+      },
       buttons: [
         { url: 'https://app.monetizze.com.br/r/AMR25407564?u=c&pl=KU309568', text: '1 POTE R$ 127,00', color: 'from-pink-500 to-rose-500' },
         { url: 'https://app.monetizze.com.br/r/AMR25407564?u=c&pl=TF309569', text: '2 POTES + 1 Grátis R$ 227,00', color: 'from-pink-500 to-rose-500' },
