@@ -175,6 +175,24 @@ function renderProducts(productsToRender) {
             <div class="p-6">
                 <h4 class="text-xl font-bold text-gray-900 mb-2">${product.name}</h4>
                 <p class="text-gray-600 mb-6 leading-relaxed">${product.description}</p>
+                
+                <!-- Botão Veja os Benefícios -->
+                <div class="benefit-container mb-6">
+                    <button 
+                        class="w-full px-6 py-2.5 bg-white text-rose-600 font-medium rounded-full border border-rose-300 shadow-sm flex items-center justify-center gap-2 hover:bg-gradient-to-r hover:from-rose-100 hover:to-pink-100 hover:text-rose-700 hover:shadow-lg transition-all duration-300 group"
+                        onclick="toggleBenefits(this)">
+                        Veja os Benefícios
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300 group-[.open]:rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+
+                    <!-- Conteúdo expansível -->
+                    <div class="benefit-content hidden transition-all duration-300 text-sm text-gray-700 bg-rose-50 rounded-xl p-4 shadow-inner mt-4">
+                        Será adicionado depois.
+                    </div>
+                </div>
+                
                 <div class="space-y-3">
                     ${buttonsHTML}
                     <button
