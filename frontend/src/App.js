@@ -311,7 +311,7 @@ const App = () => {
                 Ver Coleção
               </button>
               <button 
-                onClick={() => window.open('https://www.facebook.com/profile.php?viewas=100000686899395&id=61577588436601', '_blank')}
+                onClick={() => window.open('https://www.facebook.com/share/1FrWGrd2xb/?mibextid=wwXIfr', '_blank')}
                 className="px-8 py-4 border-2 border-rose-300 text-rose-600 font-semibold rounded-full hover:bg-rose-50 transition-all duration-300"
               >
                 Saiba Mais
