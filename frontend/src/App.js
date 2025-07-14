@@ -471,7 +471,10 @@ const App = () => {
                   {/* Botão Veja os Benefícios */}
                   <div className="benefit-container mb-6">
                     <button 
-                      onClick={() => toggleBenefits(product.id)}
+                      onClick={() => {
+                        track('Veja os Benefícios', { product: product.name, action: openBenefits === product.id ? 'close' : 'open' });
+                        toggleBenefits(product.id);
+                      }}
                       className={`w-full px-6 py-2.5 bg-white text-rose-600 font-medium rounded-full border border-rose-300 shadow-sm flex items-center justify-center gap-2 hover:bg-gradient-to-r hover:from-rose-100 hover:to-pink-100 hover:text-rose-700 hover:shadow-lg transition-all duration-300 group ${openBenefits === product.id ? 'open' : ''}`}
                     >
                       Veja os Benefícios
