@@ -173,7 +173,7 @@ function renderProducts(productsToRender) {
         // Generate buttons HTML
         const buttonsHTML = product.buttons.map(button => `
             <button 
-                onclick="handleBuyNow('${button.url}')" 
+                onclick="handleBuyNow('${button.url}', '${product.name}', '${button.text}')" 
                 class="w-full px-6 py-3 bg-gradient-to-r ${button.color} text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
                 ${button.text}
