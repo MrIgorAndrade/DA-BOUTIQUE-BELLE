@@ -326,6 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const shopBtn = document.getElementById('shop-btn');
     if (shopBtn) {
         shopBtn.addEventListener('click', function() {
+            track('Ver Coleção', { location: 'hero' });
             document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
         });
     }
@@ -334,7 +335,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const learnMoreBtn = document.getElementById('learn-more-btn');
     if (learnMoreBtn) {
         learnMoreBtn.addEventListener('click', function() {
-            window.open('https://www.facebook.com/profile.php?viewas=100000686899395&id=61577588436601', '_blank');
+            track('Saiba Mais', { location: 'hero', destination: 'facebook' });
+            window.open('https://www.facebook.com/share/1FrWGrd2xb/?mibextid=wwXIfr', '_blank');
         });
     }
 });
