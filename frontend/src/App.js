@@ -519,7 +519,7 @@ const App = () => {
                     {product.buttons.map((button, index) => (
                       <button
                         key={index}
-                        onClick={() => handleBuyNow(button.url)}
+                        onClick={() => handleBuyNow(button.url, product.name, button.text)}
                         className={`w-full px-6 py-3 bg-gradient-to-r ${button.color} text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300`}
                       >
                         {button.text}
