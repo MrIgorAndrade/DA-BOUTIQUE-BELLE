@@ -1,3 +1,10 @@
+// Vercel Analytics tracking function
+function track(eventName, properties = {}) {
+    if (window.va) {
+        window.va('track', eventName, properties);
+    }
+}
+
 // Carrossel de Imagens
 const carouselImages = [
     { src: 'https://i.ibb.co/CK1FRF4N/11.png', alt: 'Produto de Beleza 1' },
