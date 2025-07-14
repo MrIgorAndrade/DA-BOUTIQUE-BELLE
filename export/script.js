@@ -470,9 +470,9 @@ function toggleBenefits(clickedButton) {
     
     // Fechar todos os blocos primeiro
     document.querySelectorAll('.benefit-container').forEach(container => {
-        const content = container.querySelector('.benefit-content');
+        const benefitContent = container.querySelector('.benefit-content');
         const button = container.querySelector('button');
-        content.classList.add('hidden');
+        benefitContent.classList.add('hidden');
         button.classList.remove('open');
         // Reset da rotação da seta
         const arrow = button.querySelector('svg');
@@ -480,15 +480,15 @@ function toggleBenefits(clickedButton) {
     });
 
     // Abrir o correspondente ao botão clicado
-    const content = clickedButton.parentElement.querySelector('.benefit-content');
+    const targetContent = clickedButton.parentElement.querySelector('.benefit-content');
     const arrow = clickedButton.querySelector('svg');
     
-    if (content.classList.contains('hidden')) {
-        content.classList.remove('hidden');
+    if (targetContent.classList.contains('hidden')) {
+        targetContent.classList.remove('hidden');
         clickedButton.classList.add('open');
         arrow.style.transform = 'rotate(90deg)';
     } else {
-        content.classList.add('hidden');
+        targetContent.classList.add('hidden');
         clickedButton.classList.remove('open');
         arrow.style.transform = 'rotate(0deg)';
     }
