@@ -454,6 +454,20 @@ function updateCarousel() {
 
 // Função para controlar benefícios (apenas um aberto por vez)
 function toggleBenefits(clickedButton) {
+    // Get product name from parent container
+    const productCard = clickedButton.closest('.group');
+    const productName = productCard.querySelector('h4').textContent;
+    
+    // Check if benefits will be opened or closed
+    const content = clickedButton.parentElement.querySelector('.benefit-content');
+    const isCurrentlyOpen = !content.classList.contains('hidden');
+    
+    // Track the action
+    track('Veja os Benefícios', { 
+        product: productName, 
+        action: isCurrentlyOpen ? 'close' : 'open' 
+    });
+    
     // Fechar todos os blocos primeiro
     document.querySelectorAll('.benefit-container').forEach(container => {
         const content = container.querySelector('.benefit-content');
