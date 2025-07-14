@@ -249,6 +249,15 @@ function handleWhatsApp(url) {
 
 // Handle category filter clicks
 function handleCategoryClick(categoryId) {
+    // Track category selection
+    const categoryNames = {
+        'all': 'Todos os Produtos',
+        'skincare': 'Cuidados com a Pele',
+        'haircare': 'Cuidados Capilares',
+        'supplements': 'Suplementos'
+    };
+    track('Category Filter', { category: categoryNames[categoryId] || categoryId });
+    
     selectedCategory = categoryId;
     
     // Update active category button
