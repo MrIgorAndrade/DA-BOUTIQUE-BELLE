@@ -307,13 +307,19 @@ const App = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
-                onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  track('Ver Coleção', { location: 'hero' });
+                  document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+                }}
                 className="px-8 py-4 bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
               >
                 Ver Coleção
               </button>
               <button 
-                onClick={() => window.open('https://www.facebook.com/share/1FrWGrd2xb/?mibextid=wwXIfr', '_blank')}
+                onClick={() => {
+                  track('Saiba Mais', { location: 'hero', destination: 'facebook' });
+                  window.open('https://www.facebook.com/share/1FrWGrd2xb/?mibextid=wwXIfr', '_blank');
+                }}
                 className="px-8 py-4 border-2 border-rose-300 text-rose-600 font-semibold rounded-full hover:bg-rose-50 transition-all duration-300"
               >
                 Saiba Mais
