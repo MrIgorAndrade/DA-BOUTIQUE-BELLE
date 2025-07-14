@@ -260,12 +260,22 @@ const App = () => {
     ? products 
     : products.filter(product => product.categories.includes(selectedCategory));
 
-  const handleBuyNow = (checkoutUrl) => {
+  const handleBuyNow = (checkoutUrl, productName, buttonText) => {
+    track('Purchase Intent', { 
+      product: productName,
+      button: buttonText,
+      url: checkoutUrl
+    });
     window.open(checkoutUrl, '_blank');
   };
 
   // Handle WhatsApp button clicks
-  const handleWhatsApp = (whatsappUrl) => {
+  const handleWhatsApp = (whatsappUrl, productName) => {
+    track('WhatsApp Click', { 
+      purpose: 'product_inquiry',
+      product: productName,
+      location: 'product_card'
+    });
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
