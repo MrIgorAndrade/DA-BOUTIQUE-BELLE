@@ -238,12 +238,22 @@ function renderProducts(productsToRender) {
 }
 
 // Handle Buy Now button clicks
-function handleBuyNow(url) {
+function handleBuyNow(url, productName, buttonText) {
+    track('Purchase Intent', { 
+        product: productName,
+        button: buttonText,
+        url: url
+    });
     window.open(url, '_blank');
 }
 
 // Handle WhatsApp button clicks
-function handleWhatsApp(url) {
+function handleWhatsApp(url, productName) {
+    track('WhatsApp Click', { 
+        purpose: 'product_inquiry',
+        product: productName,
+        location: 'product_card'
+    });
     window.open(url, '_blank', 'noopener,noreferrer');
 }
 
