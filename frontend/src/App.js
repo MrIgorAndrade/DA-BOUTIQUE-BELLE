@@ -437,7 +437,10 @@ const App = () => {
             {categories.map((category) => (
               <button
                 key={category.id}
-                onClick={() => setSelectedCategory(category.id)}
+                onClick={() => {
+                  track('Category Filter', { category: category.name });
+                  setSelectedCategory(category.id);
+                }}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   selectedCategory === category.id
                     ? 'bg-gradient-to-r from-rose-500 to-pink-600 text-white shadow-lg'
