@@ -576,7 +576,10 @@ const App = () => {
                     
                     <div>
                       <button
-                        onClick={() => window.open('https://wa.me/5534998965230?text=Olá%21+Quero+Tirar+Uma+Dúvida', '_blank')}
+                        onClick={() => {
+                          track('WhatsApp Click', { purpose: 'duvidas', location: 'about_section' });
+                          window.open('https://wa.me/5534998965230?text=Olá%21+Quero+Tirar+Uma+Dúvida', '_blank');
+                        }}
                         className="px-8 py-4 bg-white text-rose-500 font-bold rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 flex items-center gap-3"
                       >
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
